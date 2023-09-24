@@ -201,4 +201,97 @@ for num in lista:
     
 print(f'O valor da soma dos quadrados dos valores é {soma}')
 
+29 - leia quatro notas, calcule a media aritmetica e imprima o resultado
+
+n1 = float(input('Digite a primeira nota:'))
+n2 = float(input('Digite a segunda nota:'))
+n3 = float(input('Digite a terceira nota:'))
+n4 = float(input('Digite a quarta nota:'))
+
+media = (n1 + n2 + n3 + n4) / 4
+
+print(f'A media das notas é {media}')
+
+30 - leia um valor em real e a cotação do dolar. Em seguida, imprima o valor correspondente em dolares
+
+reais = float(input('Digite a quantidade em reais:'))
+dolar = reais / 4.92
+print(f'{reais} reais equivalem a {dolar} dolares')
+
+31 - leia um numero inteiro e imprima o seu antecessor e o seu sucessor
+
+num = int(input('Digite um numero:'))
+print(f'O antecessor de {num} é {num - 1} e o sucessor é {num + 1}')
+
+32 - leia um numero inteiro e imprima a soma do seu sucessor de seu triplo com o antecessor de seu dobro
+
+num = int(input('Digite um numero:'))
+sucessor = (num * 3) + 1
+antecessor = (num * 2) - 1
+soma = sucessor + antecessor
+print(f'A soma é {soma}')
+
+33 - leia o tamanho do lado de um quadrado e imprima como resultado a sua area
+
+lado = float(input(f'Qual o tamanho do lado do quadrado?'))
+area = lado * lado
+print(f'A área é {area}')
+
+34 - leia o valor do raio de um circulo e calcule e imprima a area do circulo correspondente
+
+r = float(input('Qual o valor do raio?'))
+a = 3.14 * (r ** 2)
+print(f'A area é {a}')
+
+35 - sejam a e b is catetos de um triangulo, faça um programa que receba os valores e calcule o valor da hipotenusa
+
+import math
+c1 = float(input('Digite o primeiro cateto:'))
+c2 = float(input('Digite o segundo cateto:'))
+
+h = math.sqrt(c1 ** 2 + c2 ** 2)
+print(f'A hipotenusa é {h}')
+
+36 - leia a altura e o raio de um cilindro circular e imprima o volume do cilindro
+
+r = float(input('Digite o raio:'))
+a = float(input('Digite a altura:'))
+
+v = math.pi * (r ** 2) * a
+print(f'O volume do cilindro é {v}')
+
+37 - faça um programa que leia o valor de um produto e imprima o valor com desconto, tendo em vista que o desconto foi de 12%
+
+produto = float(input(f'Qual o valor do produto?'))
+desconto = produto - (produto * 12 / 100)
+print(f'O valor do produto com desconto é {desconto}')
+
+38 - leia o salario de um funcionario, calcule e imprima o valor do novo salario, sabendo que ele recebeu um aumento de 25%
+
+salario = float(input('Qual é o salario?'))
+novo = salario + (salario * 25 / 100)
+print(f'O novo salario será de {novo}')
+
+39 - a importancia de r$ 780.000,00 será dividida entre tres ganhadores de um concurso, o primeiro ganhador receberá 46%,
+o segundo receberá 32, e o terceiro receberá o restante
+
+premio = 780000
+primeiro = premio * 45 / 100
+segundo = premio * 32 / 100
+terceiro = premio * 23 / 100
+soma = primeiro + segundo + terceiro
+print(f'O primeiro receberá {primeiro}, o segundo receberá {segundo} e o terceiro {terceiro}, totalizando os {soma}')
+
+40 - uma empresa contrata um encanador a 30 reias por dia, faça um programa que solicite o numero de dias trabalhados pelo encanador e imprima
+a quantia liquida que deve ser paga, sabendo-se que são descontados 8% para imposto de renda.
+
+dias = int(input('Quantos dias trabalhos?'))
+valor = 30
+final = valor * dias
+desconto = final - (final * 8 / 100)
+print(desconto)
+
+41 - 
+
 """
+
