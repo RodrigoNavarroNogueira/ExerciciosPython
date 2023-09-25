@@ -121,4 +121,84 @@ if sexo == 'f':
 elif sexo == 'm':
     print(f'O peso ideal para os homens é de {peso_homem}')
 
+11)
+
+num = input('Digite um numero ')
+inteiro = int(num)
+if inteiro > 0:
+    lista = []
+    soma = 0
+    for n in num:
+        lista.append(n)
+    for num in lista:
+        numero = int(num)
+        soma += numero
+    print(f'A soma dos algarismos é: {soma}')
+else:
+    print('Numero invalido')
+
+12)
+
+import math
+
+num = float(input("Digite um número positivo: "))
+if num < 0:
+    print('Numero invalido')
+else:
+    logaritmo = math.log(num)
+    print(f'O logaritmo é {logaritmo}')
+
+13)
+
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota "))
+
+media_ponderada = (nota1 + nota2 + (nota3 * 2)) / 4
+print(media_ponderada)
+if media_ponderada >= 60:
+    print('O aluno foi aprovado')
+else:
+    print('O aluno foi reprovado')
+
+14)
+
+trabalho_de_laboratorio = float(input("Digite a primeira nota: "))
+avaliacao_semestral = float(input("Digite a segunda nota: "))
+exame_final = float(input("Digite a terceira nota "))
+
+peso1 = 2
+peso2 = 3
+peso3 = 5
+
+media_ponderada = (trabalho_de_laboratorio * peso1 + avaliacao_semestral * peso2 + exame_final * peso3) / (peso1 + peso2 + peso3)
+print(media_ponderada)
+if media_ponderada >= 5:
+    print('O aluno foi aprovado')
+elif media_ponderada >= 3 or media_ponderada <= 4.9:
+    print('O aluno ficou de recuperação')
+else:
+    print('O aluno foi reprovado')
+
+15)
+
+num = int(input("Digite um numero entre 1 e 7: "))
+if num == 1:
+    print(f'O número {num} corresponde ao Domingo.')
+elif num == 2:
+    print(f'O número {num} corresponde a Segunda-feira.')
+elif num == 3:
+    print(f'O número {num} corresponde a Terça-feira.')
+elif num == 4:
+    print(f'O número {num} corresponde a Quarta-feira.')
+elif num == 5:
+    print(f'O número {num} corresponde a Quinta-feira.')
+elif num == 6:
+    print(f'O número {num} corresponde a Sexta-feira.')
+elif num == 7:
+    print(f'O número {num} corresponde ao Sábado.')
+else:
+    print('Número invalido')
+
 """
+
