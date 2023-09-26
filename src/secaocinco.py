@@ -200,5 +200,89 @@ elif num == 7:
 else:
     print('Número invalido')
 
+16)
+
+num = int(input("Digite um numero entre 1 e 12: "))
+if num == 1:
+    print(f'O número {num} corresponde a Janeiro.')
+elif num == 2:
+    print(f'O número {num} corresponde a Fevereiro.')
+elif num == 3:
+    print(f'O número {num} corresponde a Março.')
+elif num == 4:
+    print(f'O número {num} corresponde a Abril.')
+elif num == 5:
+    print(f'O número {num} corresponde a Maio.')
+elif num == 6:
+    print(f'O número {num} corresponde a Junho.')
+elif num == 7:
+    print(f'O número {num} corresponde ao Julho.')
+elif num == 8:
+    print(f'O número {num} corresponde ao Agosto.')
+elif num == 9:
+    print(f'O número {num} corresponde ao Setembro.')
+elif num == 10:
+    print(f'O número {num} corresponde ao Outubro.')
+elif num == 11:
+    print(f'O número {num} corresponde ao Novembro.')
+elif num == 12:
+    print(f'O número {num} corresponde ao Dezembro.')
+else:
+    print('Número invalido')
+
+17)
+
+base_maior = float(input('Qual a base maior?'))
+base_menor = float(input('Qual a base menor?'))
+altura = float(input('Qual a altura?'))
+if base_maior and base_maior > 0:
+    area = (base_maior + base_menor) * altura / 2
+    print(f'A área é {area}')
+else:
+    print('O numero precisa ser maior que zero')
+
+18)
+
+operacao = int(input('Qual operação voce deseja realizar? (1) Adição (2) Subtração (3) Multiplicação (4) Divisão'))
+num1 = float(input('Qual o primeiro numero? '))
+num2 = float(input('Qual o segundo numero? '))
+
+if operacao == 1:
+    print(num1 + num2)
+elif operacao == 2:
+    print(num1 - num2)
+elif operacao == 3:
+    print(num1 * num2)
+elif operacao == 4:
+    print(num1 / num2)
+
+19)
+
+num = int(input('Digite um numero '))
+
+if num % 3 == 0 or num % 5 == 0:
+    if num % 3 == 0 and num % 5 == 0:
+        print('O número digitado é divisivel por 3 e 5')
+    else:
+        print('É divisivel por 3 ou 5')
+else:
+    print('O número não é divisivel por 3 ou 5')
+
+20)
+
+A = float(input("Digite o valor do lado A: "))
+B = float(input("Digite o valor do lado B: "))
+C = float(input("Digite o valor do lado C: "))
+
+if A + B > C and A + C > B and B + C > A:
+    if A == B == C:
+        print("É um triângulo equilátero.")
+    elif A != B and A != C and B != C:
+        print("É um triângulo escaleno.")
+    else:
+        print("É um triângulo isósceles.")
+else:
+    print("Não é um triângulo válido.")
+
 """
 
