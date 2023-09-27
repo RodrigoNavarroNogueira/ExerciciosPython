@@ -284,5 +284,256 @@ if A + B > C and A + C > B and B + C > A:
 else:
     print("Não é um triângulo válido.")
 
+21)
+
+escolha = int(input("Digite a opção:
+    1 - Soma de dois numeros
+    2 - Diferença entre dois numeros
+    3 - Produto entre dois numeros
+    4 - Divisão entre dois numeros"))
+
+num1 = float(input('Digite um numero'))
+num2 = float(input('Digite o outro numero'))
+
+if escolha == 1:
+    print(num1 + num2)
+elif escolha == 2:
+    if num1 > num2:
+        print(f'O numero {num1} é maior')
+        print(num1 - num2)
+    else:
+        print(f'O numero {num2} é maior')
+        print(num2 - num1)
+elif escolha == 3:
+    print(f'O produto é {num1 * num2}')
+elif escolha == 4:
+    if num2 == 0:
+        print('O denominador não pode ser 0')
+    else:
+        print(num1 / num2)
+
+22)
+
+idade = int(input('Idade: '))
+servico = int(input('Quantos anos de serviço? '))
+
+if idade >= 65:
+    print('Pode se aposentar pela idade')
+elif servico >= 30:
+    print('Pode se aposentar polo tempo de serviço')
+elif idade >= 60 and servico >= 25:
+    print('Pode se aposentar por ter mais de 60 anos trabalhando pelo menos 25')
+else:
+    print('Não pode se aposentar')
+
+23)
+
+ano = int(input("Digite um ano: "))
+
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print('É ano bissexto')
+else:
+    print('Não é ano bissexto')
+
+24)
+
+valor = float(input('Qual o valor do produto? '))
+estado = input('Qual o estado? ')
+
+if estado == 'mg':
+    novo_valor = valor + (valor * 7 / 100)
+    print(f'O valor do produto para o estado de {estado.upper()} é {novo_valor}')
+elif estado == 'sp':
+    novo_valor = valor + (valor * 12 / 100)
+    print(f'O valor do produto para o estado de {estado.upper()} é {novo_valor}')
+elif estado == 'rj':
+    novo_valor = valor + (valor * 15 / 100)
+    print(f'O valor do produto para o estado de {estado.upper()} é {novo_valor}')
+elif estado == 'ms':
+    novo_valor = valor + (valor * 8 / 100)
+    print(f'O valor do produto para o estado de {estado.upper()} é {novo_valor}')
+else:
+    print('Estado invalido')
+
+25)
+
+a = float(input("Digite o coeficiente a: "))
+b = float(input("Digite o coeficiente b: "))
+c = float(input("Digite o coeficiente c: "))
+
+if a != 0:
+    delta = b**2 - 4*a*c
+    if delta < 0:
+        print("Não existe raiz real.")
+    elif delta == 0:
+        raiz = -b / (2*a)
+        print("Raiz única:", raiz)
+    else:
+        raiz1 = (-b + delta**0.5) / (2*a)
+        raiz2 = (-b - delta**0.5) / (2*a)
+        print("Duas raízes reais:", raiz1, "e", raiz2)
+else:
+    print("Não é uma equação de segundo grau (a = 0).")
+
+26)
+
+dist = float(input('Qual é a distancia em km/h? '))
+gasolina = float(input('Quanto de gasolina ? '))
+
+gasto = dist / gasolina
+print(gasto)
+
+if gasto < 8:
+    print('Venda o carro!')
+elif gasto >= 8 and gasto < 12:
+    print('Economico')
+elif gasto > 12:
+    print('Super economico')
+
+27)
+
+idade = int(input('Qual é a idade do nadador? '))
+
+if idade >= 5 and idade <= 7:
+    print('Infantil A')
+elif idade >= 8 and idade <= 10:
+    print('Infantil B')
+elif idade >= 11 and idade <= 13:
+    print('Juvenil A')
+elif idade >= 14 and idade <= 17:
+    print('Juvenil B')
+elif idade >= 18:
+    print('Senior')
+
+28)
+
+import math
+
+def media_geometrica(a, b, c):
+    return math.pow(a * b * c, 1/3)
+
+    
+def media_ponderada(a, b, c):
+    return (a + 2 * b + 3 * c) / 6
+
+
+def media_harmonica(a, b, c):
+    return 3 / (1/a + 1/b + 1/c)
+
+
+def media_aritmetica(a, b, c):
+    return (a + b + c) / 3
+
+
+a = int(input("Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+c = int(input("Digite o terceiro número: "))
+
+tipo_media = input("Escolha o tipo de média (geometrica, ponderada, harmonica, aritmetica): ")
+
+if tipo_media == "geometrica":
+    resultado = media_geometrica(a, b, c)
+elif tipo_media == "ponderada":
+    resultado = media_ponderada(a, b, c)
+elif tipo_media == "harmonica":
+    resultado = media_harmonica(a, b, c)
+elif tipo_media == "aritmetica":
+    resultado = media_aritmetica(a, b, c)
+else:
+    resultado = None
+
+if resultado is not None:
+    print(f"A média {tipo_media} dos números é:", resultado)
+else:
+    print("Tipo de média inválido. Escolha entre geometrica, ponderada, harmonica ou aritmetica.")
+
+29)
+
+from random import randint
+
+count = 0
+dicionario = dict()
+
+for v in range(5):
+    num = randint(1, 50)
+    a = num
+    num = randint(1, 50)
+    b = num
+
+    pergunta = int(input(f'Qual é a soma de {a} + {b}? '))
+
+    if pergunta == a + b:
+        print('Acertou!')
+        count += 1
+        dicionario[f'Qual é a soma de {a} + {b}?'] = a + b
+    else:
+        print('Voce errou!')
+
+print('Respostas corretas:')
+for chave in dicionario:
+	print(f'{chave}: {dicionario[chave]}')
+print(f'Você acertou {count} vezes!')
+
+30)
+
+num1 = float(input('Digite um numero'))
+num2 = float(input('Digite um numero'))
+num3 = float(input('Digite um numero'))
+
+if num1 < num2 and num1 < num3:
+    print(num1)
+    if num2 < num3:
+        print(num2)
+        print(num3)
+    else:
+        print(num3)
+        print(num2)
+elif num2 < num1 and num2 < num3:
+    print(num2)
+    if num1 < num3:
+        print(num1)
+        print(num3)
+    else:
+        print(num3)
+        print(num1)
+elif num3 < num1 and num3 < num2:
+    print(num3)
+    if num1 < num2:
+        print(num1)
+        print(num2)
+    else:
+        print(num2)
+        print(num1)
+
+31)
+
+altura = float(input('Digite sua altura '))
+peso = float(input('Digite seu peso '))
+
+if altura <= 1.20 and peso <= 60:
+    print('Classificação A')
+elif altura <= 1.20 and peso > 60 and peso <= 90:
+    print('Classificação D')
+elif altura <= 1.20 and peso > 90:
+    print('Classificação G')
+
+elif altura > 1.20 and altura <= 1.70 and peso <= 60:
+    print('Classificação B')
+elif altura > 1.20 and altura <= 1.70 and peso > 60 and peso <= 90:
+    print('Classificação E')
+elif altura > 1.20 and altura <= 1.70 and peso > 90:
+    print('Classificação H')
+
+elif altura > 1.70 and peso <= 60:
+    print('Classificação C')
+elif altura > 1.70 and peso > 60 and peso <= 90:
+    print('Classificação F')
+elif altura > 1.70 and peso > 90:
+    print('Classificação I')
+
+32)
+
+
+
 """
 
