@@ -666,16 +666,29 @@ verifica_dia(data, mes, ano)
 
 36)
 
-"""
 valor = float(input('Qual o valor da venda? '))
 
-if valor < 20.000:
+if valor < 20000:
     novo_valor = valor * 14 / 100
     print(f'A comissão que será paga será: 400 Reais + {novo_valor}, totalizando: {novo_valor + 400}')
+elif valor < 40000 and valor >= 20000:
+    novo_valor = valor * 14 / 100
+    print(f'A comissão que será paga será: 500 Reais + {novo_valor}, totalizando: {novo_valor + 500}')
+elif valor < 60000 and valor >= 40000:
+    novo_valor = valor * 14 / 100
+    print(f'A comissão que será paga será: 550 Reais + {novo_valor}, totalizando: {novo_valor + 550}')
+elif valor < 80000 and valor >= 60000:
+    novo_valor = valor * 14 / 100
+    print(f'A comissão que será paga será: 600 Reais + {novo_valor}, totalizando: {novo_valor + 600}')
+elif valor < 100000 and valor >= 80000:
+    novo_valor = valor * 14 / 100
+    print(f'A comissão que será paga será: 650 Reais + {novo_valor}, totalizando: {novo_valor + 650}')
+elif valor > 100000:
+    novo_valor = valor * 16 / 100
+    print(f'A comissão que será paga será: 700 Reais + {novo_valor}, totalizando: {novo_valor + 700}')
 
 
-
-
+"""
 
 
 
