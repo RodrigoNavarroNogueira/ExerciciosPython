@@ -667,7 +667,11 @@ verifica_dia(data, mes, ano)
 36)
 
 """
+valor = float(input('Qual o valor da venda? '))
 
+if valor < 20.000:
+    novo_valor = valor * 14 / 100
+    print(f'A comissão que será paga será: 400 Reais + {novo_valor}, totalizando: {novo_valor + 400}')
 
 
 
