@@ -604,23 +604,76 @@ elif nota >= 0 and nota <= 3.9:
 
 35)
 
-"""
+import sys
 
 
 def verifica_mes(data):
     mes_string = data[2] + data[3]
     mes_inteiro = int(mes_string)
     if mes_inteiro >= 1 and mes_inteiro <= 12:
-        print(mes_inteiro)
         return mes_inteiro
     else:
         print('Mes inválido')
+        sys.exit()
 
+
+def verifica_ano(data):
+    ano_string = data[4] + data[5]
+    ano_int = int(ano_string)
+    if ano_int % 4 == 0 and ano_int % 100 != 0 or ano_int % 400 == 0:
+        print('É ano bissexto')
+        ano_bissexto = True
+        return ano_bissexto, ano_int
+    else:
+        print('Não é ano bissexto')
+        ano_bissexto = False
+        return ano_bissexto, ano_int
+
+
+def verifica_dia(data, mes, ano):
+    dia_string = data[0] + data[1]
+    dia_int = int(dia_string)
+
+    if dia_int > 31 or dia_int < 1:
+        print('Data inválida')
+        sys.exit()
+
+    if mes == 2:
+        if dia_int == 29 and ano[0] == True:
+            print('A data é válida, por que o ano é bissexto!')
+        elif dia_int == 29 and ano[0] == False:
+            print('Data inválida')
+            sys.exit()
+        elif dia_int >= 30:
+            print('Data inválida')
+            sys.exit()
+        else:
+            print('A data é válida')
+
+    elif mes in [4, 6, 9, 11]:
+        if dia_int > 30:
+            print('Data inválida')
+            sys.exit()
+        else:
+            print('A data é válida')
+    else:
+        print('A data é válida')
 
 data = input('Digite uma data: ')
 mes = verifica_mes(data)
+ano = verifica_ano(data)
+verifica_dia(data, mes, ano)
+
+36)
+
+"""
 
 
-# transformar a data em str, separar o mes, converter pra int de novo e verificar se esta entre 1 ou 12
+
+
+
+
+
+
 
 
