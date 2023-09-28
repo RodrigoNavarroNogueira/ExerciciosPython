@@ -533,7 +533,94 @@ elif altura > 1.70 and peso > 90:
 
 32)
 
+codigo = int(input("Digite o código do produto que você deseja:
+    Especificação      Código       Preço
+    Cachorro Quente     100          1.20
+    Bauru Simples       101          1.30
+    Bauru com Ovo       102          1.50
+    Hamburguer          103          1.20
+    Cheeseburguer       104          1.70
+    Suco                105          2.20
+    Refrigerante        106          1.00"))
 
+quantidade = int(input('Quantos desse produto você deseja? '))
+
+if codigo == 100 or codigo == 103:
+    print(f'O pedido custará {1.20 * quantidade}')
+elif codigo == 101:
+    print(f'O pedido custará {1.30 * quantidade}')
+elif codigo == 102:
+    print(f'O pedido custará {1.50 * quantidade}')
+elif codigo == 104:
+    print(f'O pedido custará {1.70 * quantidade}')
+elif codigo == 105:
+    print(f'O pedido custará {2.20 * quantidade}')
+elif codigo == 106:
+    print(f'O pedido custará {1.00 * quantidade}')
+
+33)
+
+valor = float(input('Qual é o preço antigo? '))
+
+if valor < 50:
+    novo_valor = valor + (valor * 5 / 100)
+elif valor >= 50 and valor <= 100:
+    novo_valor = valor + (valor * 10 / 100)
+elif valor > 100:
+    novo_valor = valor + (valor * 15 / 100)
+
+if novo_valor < 80:
+    print(f'Produto custa {novo_valor} e é barato')
+elif novo_valor > 80 and novo_valor <= 120:
+    print(f'Produto custa {novo_valor} e é normal')
+elif novo_valor > 120 and novo_valor <= 200:
+    print(f'Produto custa {novo_valor} e é caro')
+elif novo_valor > 200:
+    print(f'Produto custa {novo_valor} e é muito caro')
+
+34)
+
+nota = float(input('Qual é a nota do aluno? '))
+faltas = int(input('E suas faltas? '))
+
+if nota >= 9 and nota <= 10 and faltas <= 20:
+    print('Conceito A')
+elif nota >= 9 and nota <= 10 and faltas > 20:
+    print('Conceito B')
+elif nota >= 7.5 and nota <= 8.9 and faltas <= 20:
+    print('Conceito B')
+elif nota >= 7.5 and nota <= 8.9 and faltas > 20:
+    print('Conceito C')
+elif nota >= 5.0 and nota <= 7.4 and faltas <= 20:
+    print('Conceito C')
+elif nota >= 5.0 and nota <= 7.4 and faltas > 20:
+    print('Conceito D')
+elif nota >= 4.0 and nota <= 4.9 and faltas <= 20:
+    print('Conceito D')
+elif nota >= 4.0 and nota <= 4.9 and faltas > 20:
+    print('Conceito E')
+elif nota >= 0 and nota <= 3.9:
+    print('Conceito E')
+
+35)
 
 """
+
+
+def verifica_mes(data):
+    mes_string = data[2] + data[3]
+    mes_inteiro = int(mes_string)
+    if mes_inteiro >= 1 and mes_inteiro <= 12:
+        print(mes_inteiro)
+        return mes_inteiro
+    else:
+        print('Mes inválido')
+
+
+data = input('Digite uma data: ')
+mes = verifica_mes(data)
+
+
+# transformar a data em str, separar o mes, converter pra int de novo e verificar se esta entre 1 ou 12
+
 
