@@ -388,7 +388,6 @@ s1, s2 = comeca[4], comeca[5]
 segundos = int(s1 + s2)
 hora = datetime.datetime(2023, 9, 23, hora, minutos, segundos)
 hora_nova = hora + datetime.timedelta(seconds=seg)
-breakpoint()
 print(f'Como o programa se iniciou em {hora}, então ele se encerra em {hora_nova}')
 
 50 - implemente um programa que calcule o ano de nascimento de uma pessoa a partir de sua idade e do ano atual
