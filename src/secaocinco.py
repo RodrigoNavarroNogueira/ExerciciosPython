@@ -687,10 +687,82 @@ elif valor > 100000:
     novo_valor = valor * 16 / 100
     print(f'A comissão que será paga será: 700 Reais + {novo_valor}, totalizando: {novo_valor + 700}')
 
+37)
+
+hora_entrada = int(input('Qual o horário da entrada? '))
+hora_saida = int(input('Qual o horário da saida? '))
+
+hora_atual = datetime.datetime.now()
+hora_formatada = hora_atual.strftime("%H:%M:%S")
+print(hora_formatada)
+
 
 """
 
+import datetime
 
+hora_entrada = input('Qual o horário da entrada? ')
+hora_saida = input('Qual o horário da saida? ')
 
+if hora_entrada[0] != '0':
+    h1, h2 = hora_entrada[0], hora_entrada[1]
+    hora = int(h1 + h2)
+    m1, m2 = hora_entrada[2], hora_entrada[3]
+    minutos = int(m1 + m2)
 
+    hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
+else:
+    h1 = hora_entrada[1]
+    hora = int(h1)
+    m1, m2 = hora_entrada[2], hora_entrada[3]
+    minutos = int(m1 + m2)
 
+    hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
+
+if hora_saida[0] != '0':
+    h1, h2 = hora_saida[0], hora_saida[1]
+    hora = int(h1 + h2)
+    m1, m2 = hora_saida[2], hora_saida[3]
+    minutos = int(m1 + m2)
+else:
+    h1 = hora_saida[1]
+    hora = int(h1)
+    m1, m2 = hora_saida[2], hora_saida[3]
+    minutos = int(m1 + m2)  
+
+hora2 = datetime.datetime(2023, 9, 23, hora, minutos)
+diferenca = hora2 - hora1
+
+aa = str(diferenca)
+print(diferenca)
+bb = aa.replace(':', '')
+c = int(bb)
+print(c)
+
+if c <= 10000:
+    print('Como pagou por 1 hora, será pago 1 real')
+elif c > 10000 and c <= 20000:
+    print('Como pagou por 2 horas, será pago 2 reais')
+elif c > 20000 and c <= 40000:
+    if c > 20000 and c <= 30000:
+        hora = 1
+        print(f'Como pagou por 3 horas, será pago {(hora * 1.40) + 2}')
+    else:
+        hora = 2
+        print(f'Como pagou por 4 horas, será pago {(hora * 1.40) + 2}')
+elif c > 40000:
+    if c < 100000:
+        string = str(c)
+        hora_string = string[0]
+        hora = int(hora_string)
+        hora_cobrada = hora - 4
+        print(f'Como pagou por {hora} horas, será pago {(hora_cobrada * 2) + 4.8}')
+    else:
+        string = str(c)
+        hora_string = string[0:2]
+        breakpoint()
+        hora = int(hora_string)
+        hora_cobrada = hora - 4
+        print(f'Como pagou por {hora} horas, será pago {(hora_cobrada * 2) + 4.8}')
+
+# arrumar o hora_string (posição da conversão) se o tempo for mais de 10+ horas
