@@ -709,15 +709,13 @@ if hora_entrada[0] != '0':
     hora = int(h1 + h2)
     m1, m2 = hora_entrada[2], hora_entrada[3]
     minutos = int(m1 + m2)
-
-    hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
 else:
     h1 = hora_entrada[1]
     hora = int(h1)
     m1, m2 = hora_entrada[2], hora_entrada[3]
     minutos = int(m1 + m2)
 
-    hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
+hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
 
 if hora_saida[0] != '0':
     h1, h2 = hora_saida[0], hora_saida[1]
@@ -760,9 +758,8 @@ elif c > 40000:
     else:
         string = str(c)
         hora_string = string[0:2]
-        breakpoint()
         hora = int(hora_string)
         hora_cobrada = hora - 4
         print(f'Como pagou por {hora} horas, será pago {(hora_cobrada * 2) + 4.8}')
 
-# arrumar o hora_string (posição da conversão) se o tempo for mais de 10+ horas
+# se o tempo de permanencia passar de 24 horas, precisa contar pro dia seguinte
