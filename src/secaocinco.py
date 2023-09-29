@@ -689,16 +689,6 @@ elif valor > 100000:
 
 37)
 
-hora_entrada = int(input('Qual o horário da entrada? '))
-hora_saida = int(input('Qual o horário da saida? '))
-
-hora_atual = datetime.datetime.now()
-hora_formatada = hora_atual.strftime("%H:%M:%S")
-print(hora_formatada)
-
-
-"""
-
 import datetime
 
 hora_entrada = input('Qual o horário da entrada? ')
@@ -706,29 +696,33 @@ hora_saida = input('Qual o horário da saida? ')
 
 if hora_entrada[0] != '0':
     h1, h2 = hora_entrada[0], hora_entrada[1]
-    hora = int(h1 + h2)
+    hora_que_entrou = int(h1 + h2)
     m1, m2 = hora_entrada[2], hora_entrada[3]
     minutos = int(m1 + m2)
 else:
     h1 = hora_entrada[1]
-    hora = int(h1)
+    hora_que_entrou = int(h1)
     m1, m2 = hora_entrada[2], hora_entrada[3]
     minutos = int(m1 + m2)
 
-hora1 = datetime.datetime(2023, 9, 23, hora, minutos)
+hora1 = datetime.datetime(2023, 9, 23, hora_que_entrou, minutos)
 
 if hora_saida[0] != '0':
     h1, h2 = hora_saida[0], hora_saida[1]
-    hora = int(h1 + h2)
+    hora_que_saiu = int(h1 + h2)
     m1, m2 = hora_saida[2], hora_saida[3]
     minutos = int(m1 + m2)
 else:
     h1 = hora_saida[1]
-    hora = int(h1)
+    hora_que_saiu = int(h1)
     m1, m2 = hora_saida[2], hora_saida[3]
     minutos = int(m1 + m2)  
 
-hora2 = datetime.datetime(2023, 9, 23, hora, minutos)
+if hora_que_entrou < hora_que_saiu:
+    hora2 = datetime.datetime(2023, 9, 23, hora_que_saiu, minutos)
+else:
+    hora2 = datetime.datetime(2023, 9, 24, hora_que_saiu, minutos)
+
 diferenca = hora2 - hora1
 
 aa = str(diferenca)
@@ -762,4 +756,8 @@ elif c > 40000:
         hora_cobrada = hora - 4
         print(f'Como pagou por {hora} horas, será pago {(hora_cobrada * 2) + 4.8}')
 
-# se o tempo de permanencia passar de 24 horas, precisa contar pro dia seguinte
+38)
+        
+"""
+
+
