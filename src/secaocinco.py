@@ -757,7 +757,90 @@ elif c > 40000:
         print(f'Como pagou por {hora} horas, será pago {(hora_cobrada * 2) + 4.8}')
 
 38)
+
+import sys
+
+
+def verifica_mes(mes):
+    mes_inteiro = int(mes)
+    if mes_inteiro >= 1 and mes_inteiro <= 12:
+        return mes_inteiro
+    else:
+        print('Mes inválido')
+        sys.exit()
+
+
+def verifica_ano(ano):
+    ano_int = int(ano)
+    if ano_int % 4 == 0 and ano_int % 100 != 0 or ano_int % 400 == 0:
+        print('É ano bissexto')
+        ano_bissexto = True
+        return ano_bissexto, ano_int
+    else:
+        print('Não é ano bissexto')
+        ano_bissexto = False
+        return ano_bissexto, ano_int
+
+
+def verifica_dia(dia, mes, ano):
+    dia_int = int(dia)
+
+    if dia_int > 31 or dia_int < 1:
+        print('Data inválida')
+        sys.exit()
+
+    if mes == 2:
+        if dia_int == 29 and ano[0] == True:
+            print('A data é válida, por que o ano é bissexto!')
+        elif dia_int == 29 and ano[0] == False:
+            print('Data inválida')
+            sys.exit()
+        elif dia_int >= 30:
+            print('Data inválida')
+            sys.exit()
+        else:
+            print('A data é válida')
+
+    elif mes in [4, 6, 9, 11]:
+        if dia_int > 30:
+            print('Data inválida')
+            sys.exit()
+        else:
+            print('A data é válida')
+    else:
+        print('A data é válida')
+
+data = input('Digite o dia de nascimento: ')
+mes = input('Digite o mes de nascimento: ')
+ano = input('Digite o ano de nascimento: ')
+
+mes = verifica_mes(mes)
+ano = verifica_ano(ano)
+verifica_dia(data, mes, ano)
+
+39)
+
+salario_atual = float(input('Digite o salario atual do funcionario: '))
+tempo_de_empresa = int(input('Digite o tempo de empresa em anos: '))
+
+if salario_atual <= 500 and tempo_de_empresa < 1:
+    novo_salario = salario_atual + (salario_atual * 25 / 100)
+    print(f'O salário reajustado desse funcionário é R${novo_salario}')
+
+elif salario_atual > 500 and salario_atual <= 1000 and tempo_de_empresa >= 1 and tempo_de_empresa <= 3:
+    novo_salario = salario_atual + (salario_atual * 20 / 100)
+    print(f'O salário reajustado desse funcionário é R${novo_salario + 100}, devido ao bonus de R$100,00!')
+
+elif salario_atual > 1000 and salario_atual <= 1500 and tempo_de_empresa >= 4 and tempo_de_empresa <= 6:
+    novo_salario = salario_atual + (salario_atual * 15 / 100)
+    print(f'O salário reajustado desse funcionário é R${novo_salario + 200}, devido ao bonus de R$200,00!')
+
+elif salario_atual > 1500 and salario_atual <= 2000 and tempo_de_empresa >= 7 and tempo_de_empresa <= 10:
+    novo_salario = salario_atual + (salario_atual * 10 / 100)
+    print(f'O salário reajustado desse funcionário é R${novo_salario + 300}, devido ao bonus de R$300,00!')
+
+elif salario_atual > 2000 and tempo_de_empresa > 10:
+    print(f'O salário reajustado desse funcionário é R${salario_atual + 500}, devido ao bonus de R$500,00!')
         
 """
-
 
