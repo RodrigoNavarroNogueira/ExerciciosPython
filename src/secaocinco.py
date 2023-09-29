@@ -841,6 +841,30 @@ elif salario_atual > 1500 and salario_atual <= 2000 and tempo_de_empresa >= 7 an
 
 elif salario_atual > 2000 and tempo_de_empresa > 10:
     print(f'O salário reajustado desse funcionário é R${salario_atual + 500}, devido ao bonus de R$500,00!')
-        
+
+40)
+
+custo_de_fabrica = float(input('Digite o custo de fábrica do carro: '))
+
+if custo_de_fabrica <= 12000:
+    distribuidor = custo_de_fabrica * 5 / 100
+    valor_do_consumidor = custo_de_fabrica + distribuidor
+    print('Sem impostos, devido ao valor da fábrica.')
+    print(f'O custo do carro ao consumidor será de {valor_do_consumidor}')
+elif custo_de_fabrica > 12000 and custo_de_fabrica <= 25000:
+    distribuidor = custo_de_fabrica * 10 / 100
+    impostos = custo_de_fabrica * 15 / 100
+    valor_do_consumidor = custo_de_fabrica + distribuidor + impostos
+    print("Cobrando 15% de impostos e 10% do distribuidor.")
+    print(f'O custo do carro ao consumidor será de {valor_do_consumidor}')
+elif custo_de_fabrica > 25000:
+    distribuidor = custo_de_fabrica * 15 / 100
+    impostos = custo_de_fabrica * 20 / 100
+    valor_do_consumidor = custo_de_fabrica + distribuidor + impostos
+    print("Cobrando 20% de impostos e 15% do distribuidor.")
+    print(f'O custo do carro ao consumidor será de {valor_do_consumidor}')
+
+41)
+
 """
 
