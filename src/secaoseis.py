@@ -192,4 +192,63 @@ print(f'Foi lido {count_total - 1} dados e {count_pares - 1} são pares.')
 
 21)
 
+soma = 0
+mult = 1
+num1 = int(input('Digite o primeiro numero: '))
+num2 = int(input('Digite o segundo numero: '))
+
+for numero in range(num1, num2 + 1):
+    if numero % 2 == 0:
+        soma += numero
+    elif numero % 2 == 1:
+        mult *= numero
+
+print(f'A soma do intervalo dos números pares digitados é {soma} e a multiplicação dos valores impares é {mult}')
+
+22)
+
+import statistics
+
+nota = 10
+count = 0
+lista = []
+while nota >= 10 and nota <=20:
+    nota = int(input('Digite sua nota entre 10 a 20: '))
+    if nota >= 10 and nota <= 20:
+        count += 1
+        lista.append(nota)
+    else:
+        break
+print(f'Voce verificou {count} notas e a média delas é {statistics.mean(lista)}')
+
+23)
+
+divisores = []
+num = int(input('Digite um numero positivo: '))
+
+for n in range(1, num + 1):
+    if num % n == 0:
+        divisores.append(n)
+valores_formatados = ', '.join(map(str, divisores))
+
+print(f'Os números divisores são {valores_formatados}')
+
+24)
+
+divisores = []
+num = int(input('Digite um numero positivo: '))
+
+for n in range(1, num):
+    if num % n == 0:
+        divisores.append(n)
+print(f'A soma dos divisores do número {num} é {sum(divisores)}')
+
+25)
+
+soma = 0
+for n in range(1, 1000):
+    if n % 3 == 0 or n % 5 == 0:
+        soma += n
+print(f'A soma dos números que são multiplos de 3 ou 5 é {soma}')
+
 """
