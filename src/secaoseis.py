@@ -74,5 +74,34 @@ for num in range(1, 11):
         lista.append(num)
 print(f'A média dos números é {statistics.mean(lista)}')
 
+8)
+
+lista = []
+
+for num in range(1, 11):
+    num = int(input('Digite um valor: '))
+    lista.append(num)
+print(f'Menor valor: {min(lista)}')
+print(f'Maior valor: {max(lista)}')
+
+9)
+
+num = int(input('Digite um numero: '))
+
+for n in range(1, num + 1):
+    if n % 2 == 1:
+        print(n)
+
+10)
+
+soma = 0
+
+for n in range(1, 51):
+    if n % 2 == 0:
+        soma += n
+print(soma)
+
+11)
+
 """
 
