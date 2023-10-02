@@ -53,6 +53,26 @@ print(f'A soma de todos os números é {soma}')
 
 6)
 
-"""
+import statistics
 
+lista = []
+
+for num in range(1, 11):
+    num = int(input('Digite um valor: '))
+    lista.append(num)
+print(f'A média dos números é {statistics.mean(lista)}')
+
+7)
+
+import statistics
+
+lista = []
+
+for num in range(1, 11):
+    num = int(input('Digite um valor: '))
+    if num > 0:
+        lista.append(num)
+print(f'A média dos números é {statistics.mean(lista)}')
+
+"""
 
