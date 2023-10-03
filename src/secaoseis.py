@@ -251,4 +251,102 @@ for n in range(1, 1000):
         soma += n
 print(f'A soma dos números que são multiplos de 3 ou 5 é {soma}')
 
+26)
+
+num = int(input('Digite um numero positivo: '))
+
+for n in range(num, 10**9):
+    if n % 11 == 0:
+        print(f'O primeiro multiplo de 11 encontrado é o {n}')
+        break
+    elif n % 13 == 0:
+        print(f'O primeiro multiplo de 13 encontrado é o {n}')
+        break
+    elif n % 17 == 0:
+        print(f'O primeiro multiplo de 17 encontrado é o {n}')
+        break
+
+27)
+
+num = int(input('Digite um numero positivo: '))
+soma = 0
+for n in range(1, num + 1):
+    soma += 1 / n
+print(soma)
+
+28)
+
+def fatorial(numero):
+    if numero == 0:
+        return 1
+    else:
+        resultado = 1
+        for n in range(1, numero + 1):
+            resultado *= n
+        return resultado
+
+
+n = int(input('Digite um numero positivo: '))
+e = 1
+
+for i in range(1, n + 1):
+    e += 1 / fatorial(i)
+print(f"O valor de E é aproximadamente: {e}")
+
+29)
+
+def fatorial(numero):
+    if numero == 0:
+        return 1
+    else:
+        resultado = 1
+        for i in range(1, numero + 1):
+            resultado *= i
+        return resultado
+S = 0
+
+for n in range(5):
+    termo = n / fatorial(2 * n)
+    S += termo
+
+print(f"O valor da série para 5 termos é: {S}")
+
+30)
+
+num = int(input('Digite um numero positivo: '))
+soma_sequencial = 0
+soma_impar = 0
+soma_alternada = 0
+
+
+def primeira_sequencia(soma_sequencial):
+    for n in range(1, num + 1):
+        soma_sequencial += n
+    print(soma_sequencial)
+    return soma_sequencial
+
+
+def segunda_sequencia(soma_alternada):
+    for i in range(1, num + 1):
+        if i % 2 == 1:
+            soma_alternada += i
+        else:
+            soma_alternada -= i
+    print(soma_alternada)
+    return soma_alternada
+
+def terceira_sequencia(soma_impar):
+    for n in range(1, num + 1, 2):
+        soma_impar += n
+    print(soma_impar)
+    return soma_impar
+
+
+primeira_sequencia(soma_sequencial)
+segunda_sequencia(soma_alternada)
+terceira_sequencia(soma_impar)
+
+31)
+
 """
+
