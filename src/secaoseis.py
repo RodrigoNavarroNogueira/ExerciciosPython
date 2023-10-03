@@ -346,5 +346,38 @@ primeira_sequencia(soma_sequencial)
 segunda_sequencia(soma_alternada)
 terceira_sequencia(soma_impar)
 
-"""
+31)
 
+soma = 0
+
+for i in range(1, 51):
+    numerador = 2 * i - 1 
+    denominador = i      
+    termo = numerador / denominador
+    soma += termo
+print(f"O valor da série S é: {soma}")
+
+32)
+
+from random import randint
+
+continuar = True
+
+while continuar == True:
+    d1 = randint(1, 6)
+    d2 = randint(1, 6)
+    print(d1)
+    print(d2)
+    if d1 > d2:
+        print('O primeiro dado foi maior')
+    elif d2 > d1:
+        print('O segundo dado foi maior')
+    elif d1 == d2:
+        print('Os dados sairam iguais')
+    cont = input('Deseja continuar? Para sair digite "não": ')
+    if cont == 'não':
+        continuar = False
+
+33)
+
+"""
