@@ -346,7 +346,5 @@ primeira_sequencia(soma_sequencial)
 segunda_sequencia(soma_alternada)
 terceira_sequencia(soma_impar)
 
-31)
-
 """
 
