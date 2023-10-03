@@ -380,4 +380,14 @@ while continuar == True:
 
 33)
 
+n = int(input('Digite um numero positivo: '))
+i = int(input('Digite um numero positivo: '))
+j = int(input('Digite um numero positivo: '))
+
+for numero in range(0, n + 3):
+    if numero % i == 0 or numero % j == 0 or numero % i == 0 and numero % j == 0:
+        print(numero)
+
+34)
+
 """
