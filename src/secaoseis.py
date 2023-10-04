@@ -406,9 +406,39 @@ print(f"O menor número divisível por todos os números de 1 a 20 é: {mmc_atua
 
 35)
 
+inicio = int(input('Digite o valor inicial: '))
+fim = int(input('Até que numero? '))
+
+soma = 0
+lista = []
+for n in range(inicio, fim + 1):
+    if n % 2 == 1:
+        lista.append(n)
+print(f'A soma de todos os impares entre o intervalo de {inicio} e {fim} é {sum(lista)}')
+
+36)
+
+soma_quadrados = 0
+soma_numeros = 0
+soma = 0
+
+for n in range(1, 101):
+    quadrado = n ** 2
+    soma_quadrados += quadrado
+    
+for n in range(1, 101):
+    soma += n
+    soma_numeros = soma ** 2
+
+print(f'A diferença entre a soma dos quadrados dos cem primeiros numeros naturais e o quadrado da soma é {soma_numeros} - {soma_quadrados} = {soma_numeros - soma_quadrados}')
+
+37)
+
+
+
+38)
+
 """
-
-
 
 
     
