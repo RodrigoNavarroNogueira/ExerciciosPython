@@ -390,4 +390,25 @@ for numero in range(0, n + 3):
 
 34)
 
+import math
+
+
+def mmc(a, b):
+    return a * b // math.gcd(a, b)
+
+
+mmc_atual = 1
+
+for n in range(1, 21):
+    mmc_atual = mmc(mmc_atual, n)
+
+print(f"O menor número divisível por todos os números de 1 a 20 é: {mmc_atual}")
+
+35)
+
 """
+
+
+
+
+    
