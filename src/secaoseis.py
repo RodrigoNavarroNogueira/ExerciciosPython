@@ -434,7 +434,16 @@ print(f'A diferença entre a soma dos quadrados dos cem primeiros numeros natura
 
 37)
 
+import math
 
+for num in range(1000, 9999 + 1):
+    num_int = str(num)
+    primeira_parte = int(num_int[0] + num_int[1])
+    segunda_parte = int(num_int[2] + num_int[3])
+    soma = primeira_parte + segunda_parte
+    b = math.sqrt(num)
+    if soma == b:
+        print(num)
 
 38)
 
