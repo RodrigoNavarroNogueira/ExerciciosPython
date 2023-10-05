@@ -488,6 +488,19 @@ print(f'O maior número digitado foi {max(lista)} e o menor foi {min(lista)}')
 
 41)
 
+parar = False
+while parar == False:
+    r1 = int(input('Digite o primeiro resistor: '))
+    r2 = int(input('Digite o segundo resistor: '))
+    if r1 == 0 or r2 == 0:
+        print('O valor 0 foi fornecido, portanto o programa será encerrado.')
+        parar = True
+    else:
+        r = (r1 * r2) / (r1 + r2)
+        print(f'Resistor é {r}')
+
+42)
+
 
 
 """
