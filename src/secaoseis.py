@@ -447,7 +447,17 @@ for num in range(1000, 9999 + 1):
 
 38)
 
+a, b, c = 0, 0, 0
+
+for a in range(1, 1000):
+    for b in range(a + 1, 1000):
+        c = 1000 - a - b
+        if a**2 + b**2 == c**2:
+            break
+    if a**2 + b**2 == c**2:
+        break
+
+print(f"O terno pitagórico é: a = {a}, b = {b}, c = {c}")
+
 """
 
-
-    
