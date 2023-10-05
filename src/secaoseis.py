@@ -459,5 +459,36 @@ for a in range(1, 1000):
 
 print(f"O terno pitagórico é: a = {a}, b = {b}, c = {c}")
 
+39)
+
+base = int(input('Qual a base? '))
+altura = int(input('Qual a altura? '))
+
+def area(base, altura):
+    area = (base * altura) / 2
+    return area
+
+
+if base <= 0 or altura <= 0:
+    print('Voce digitou valores inválidos')
+else:
+    a = area(base, altura)
+    print(a)
+
+40)
+
+num = 0
+lista = []
+while num >= 0:
+    num = int(input('Digite um número positivo, para sair digite um número negativo: '))
+    if num > 0:
+        lista.append(num)
+
+print(f'O maior número digitado foi {max(lista)} e o menor foi {min(lista)}')
+
+41)
+
+
+
 """
 
