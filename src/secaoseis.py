@@ -501,7 +501,21 @@ while parar == False:
 
 42)
 
+import math
 
+parar = False
+lista = []
+
+while parar == False:
+    n = float(input('Digite um numero'))
+    if n <= 0:
+        parar = True
+    else:
+        lista.append(n)
+ 
+for num in lista:
+    print(f'O quadrado do número {num} é {num ** 2}')
+    print(f'O cubo do número {num} é {num ** 3}')
+    print(f'A raiz quadrada do número {num} é {math.sqrt(num)}')
 
 """
-
