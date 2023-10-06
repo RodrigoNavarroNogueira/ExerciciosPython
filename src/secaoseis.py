@@ -518,4 +518,23 @@ for num in lista:
     print(f'O cubo do número {num} é {num ** 3}')
     print(f'A raiz quadrada do número {num} é {math.sqrt(num)}')
 
+43)
+
+import statistics
+
+lista = []
+
+while True:
+    idade = int(input('Digite uma idade (Para sair pressione 0): '))
+    if idade <= 0:
+        break
+    else:
+        lista.append(idade)
+
+print(f'A média das idades é de {statistics.mean(lista)}')
+
+44)
+
+
+
 """
