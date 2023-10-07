@@ -591,7 +591,60 @@ while True:
         
 47)
 
+while True:
+    escolha = int(input(""\nSelecione a opção que você deseja:\n 
+    [ 1 ] - Adição 
+    [ 2 ] - Subtração
+    [ 3 ] - Multiplicação
+    [ 4 ] - Divisão
+    [ 5 ] - Saida\n\n""))
+
+    if escolha == 5:
+        print('Encerrando programa')
+        break
+
+    num1 = float(input('Qual o primeiro numero? '))
+    num2 = float(input('Qual o segundo numero? '))
+
+    if escolha == 1:
+        print(num1 + num2)
+    elif escolha == 2:
+        print(num1 - num2)
+    elif escolha == 3:
+        print(num1 * num2)
+    elif escolha == 4:
+        print(num1 / num2)
+
+48)
+
+def fibonacci_ate_superior():
+    a, b = 0, 1
+    fibonacci_sequence = []
+
+    while a <= 4000000:
+        fibonacci_sequence.append(a)
+        a, b = b, a + b
+
+    return fibonacci_sequence
+
+
+def soma_sequencia_fibonacci(sequencia_fibonacci):
+    pares_sequencia_fibonacci = []
+    for num in sequencia_fibonacci:
+        if num % 2 == 0:
+            pares_sequencia_fibonacci.append(num)
+    
+    return sum(pares_sequencia_fibonacci)
+
+
+sequencia_fibonacci = fibonacci_ate_superior()
+print(sequencia_fibonacci)
+soma = soma_sequencia_fibonacci(sequencia_fibonacci)
+print(f"A soma de todos os termos de valor par na sequencia de Fibonacci é: {soma}")
+
+49)
 
 
 """
+
 
