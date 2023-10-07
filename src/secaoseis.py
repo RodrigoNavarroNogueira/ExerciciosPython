@@ -569,7 +569,9 @@ while True:
         print('Encerrando programa')
         break
 
+46)
+
+
+
 """
-
-
 
