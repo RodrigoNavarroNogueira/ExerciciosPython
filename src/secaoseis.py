@@ -571,6 +571,26 @@ while True:
 
 46)
 
+import random
+
+count = 0
+numero_sorteado = random.randint(1, 1000)
+
+while True:
+    chute = int(input('Qual o seu palpite?'))
+    if chute > numero_sorteado:
+        print('O chute foi maior que o numero gerado!')
+        count += 1
+    elif chute < numero_sorteado:
+        print('O chute foi menor que o numero gerado!')
+        count += 1
+    elif chute == numero_sorteado:
+        count += 1
+        print(f'Parabéns, voce acertou o número sorteado com {count} tentativas!')
+        break
+        
+47)
+
 
 
 """
