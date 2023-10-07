@@ -535,6 +535,41 @@ print(f'A média das idades é de {statistics.mean(lista)}')
 
 44)
 
+def fibonacci_ate_superior(numero_lido):
+    a, b = 0, 1
+    fibonacci_sequence = []
 
+    while a <= numero_lido:
+        fibonacci_sequence.append(a)
+        a, b = b, a + b
+
+    return fibonacci_sequence
+
+numero_lido = int(input("Digite um número positivo: "))
+
+if numero_lido <= 0:
+    print("Por favor, digite um número positivo.")
+else:
+    sequencia_fibonacci = fibonacci_ate_superior(numero_lido)
+    print(f"Sequência de Fibonacci até o primeiro número superior a {numero_lido}: {sequencia_fibonacci}")
+
+45)
+
+while True:
+    escolha = int(input('Escolha uma opção:\n(1) Para converter km/h para m/s\n(2) Para converter m/s para km/h\n(3) Para sair\n'))
+    if escolha == 1:
+        km = float(input('Digite a velocidade em km/h: '))
+        ms = km / 3.6
+        print(f'A velocidade convertida em m/s é {ms}')
+    elif escolha == 2:
+        ms = float(input('Digite a velocidade em m/s: '))
+        km = ms * 3.6
+        print(f'A velocidade convertida em km/h é {km}')
+    elif escolha == 3:
+        print('Encerrando programa')
+        break
 
 """
+
+
+
