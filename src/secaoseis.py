@@ -672,6 +672,20 @@ print(f'Será necessário {anos} anos para que Zé alcance Chico, após esse per
 
 51)
 
+salario = 2000
+ano = 1995
+aumento = 0.75
+
+while ano <= 2023:
+    ano += 1
+    aumento = aumento * 2
+    salario = salario + (salario * (aumento) / 100)
+
+print(f'O salário em {ano - 1} será de {salario}')
+
+52)
+
+
 
 """
 
