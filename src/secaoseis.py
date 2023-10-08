@@ -659,8 +659,19 @@ print(f'Depois de {meses} meses, o salário de João será {joao} e de Carlos {c
 
 50)
 
+chico = 1.5
+ze = 1.10
+anos = 0
+
+while ze < chico:
+    anos += 1
+    chico = chico + 0.02
+    ze = ze + 0.03
+
+print(f'Será necessário {anos} anos para que Zé alcance Chico, após esse período Zé terá {ze} metros e Chico {chico}')
+
+51)
 
 
 """
-
 
