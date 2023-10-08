@@ -644,6 +644,22 @@ print(f"A soma de todos os termos de valor par na sequencia de Fibonacci é: {so
 
 49)
 
+carlos = float(input('Digite o salario do Carlos: '))
+joao = carlos / 3
+meses = 0
+
+while joao <= carlos:
+    meses += 1
+    carlos = carlos + (carlos * 2 / 100)
+    joao = joao + (joao * 5 / 100)
+
+print(carlos)
+print(joao)
+print(f'Depois de {meses} meses, o salário de João será {joao} e de Carlos {carlos}')
+
+50)
+
+
 
 """
 
