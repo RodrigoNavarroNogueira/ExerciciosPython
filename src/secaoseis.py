@@ -724,8 +724,28 @@ for c in range(1, n + 1):
 
 54)
 
+def contador_divisor(num):
+    divisores = 0
+    for n in range(1, num + 1):
+        if num % n == 0:
+            divisores += 1
+    return divisores
+
+num = int(input('Digite um numero maior que 1: '))
+
+if num == 1 or num % 2 == 0 and num != 2:
+    print('Não é primo')
+else:
+    divisores = contador_divisor(num)
+    if divisores > 2:
+        print('Não é primo')
+    else:
+        print('É primo!!!')
+ 
+55)
 
 """
 
 
+    
 
