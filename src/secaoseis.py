@@ -829,7 +829,35 @@ print(f'A soma de todos os números primos entre {inicio} e {fim} é {sum(lista)
 
 59)
 
+import statistics
 
+consumo_residencial = []
+consumo_comercial = []
+consumo_industrial = []
+consumo_total = []
+
+habitantes = int(input('Digite o número de habitantes da cidade: '))
+valor_kwh = int(input('Digite o valor do kWh: '))
+
+for habitante in range(1, habitantes + 1):
+    consumo = int(input(f'Digite o consumo do habitante {habitante} (em horas):'))
+    codigo = int(input(f'Digite o código do consumidor do habitante {habitante} (1 - Residencial, 2 - Comercial, 3 - Industrial)'))
+    consumo_total.append(consumo * valor_kwh)
+
+    if codigo == 1:
+        consumo_residencial.append(consumo * valor_kwh)
+    elif codigo == 2:
+        consumo_comercial.append(consumo * valor_kwh)
+    elif codigo == 3:
+        consumo_industrial.append(consumo * valor_kwh)
+    
+print(consumo_total)
+print(f'Total de consumo residencial: {sum(consumo_residencial)}')
+print(f'Total de consumo comercial: {sum(consumo_comercial)}')
+print(f'Total de consumo industrial:{sum(consumo_industrial)}')
+print(f'O maior consumo registrado foi: {max(consumo_total)}')
+print(f'O menor consumo registrado foi: {min(consumo_total)}')
+print(f'A média do consumo dos habitantes é:{statistics.mean(consumo_total)}')
 
 """
 
