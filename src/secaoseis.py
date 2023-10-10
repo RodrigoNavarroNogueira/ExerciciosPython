@@ -787,5 +787,33 @@ for numero in range(1, 2000000):
 
 print(f'A soma de todos os números primos até 2.000.000 é {soma}')
 
+57)
+
+def contador_divisor(numero):
+    divisores = 0
+    for n in range(1, numero + 1):
+        if numero % n == 0:
+            divisores += 1
+    return divisores
+
+lista = []
+inicio = int(input('Qual numero deseja começar a contagem? '))
+fim = int(input('Até qual numero? '))
+
+for numero in range(inicio, fim + 1):
+    divisores = contador_divisor(numero)
+    if divisores == 2:
+        lista.append(numero)
+
+print(f'Existem {len(lista)} números primos entre {inicio} e {fim}')
+
+58)
+
+
+
+59)
+
+
+
 """
 
