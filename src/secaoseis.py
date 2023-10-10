@@ -859,5 +859,32 @@ print(f'O maior consumo registrado foi: {max(consumo_total)}')
 print(f'O menor consumo registrado foi: {min(consumo_total)}')
 print(f'A média do consumo dos habitantes é:{statistics.mean(consumo_total)}')
 
+60)
+
+import statistics   
+
+lista = []
+media_pares = []
+while True:
+    num = int(input('Digite um número maior que 0: '))
+    if num == 0:
+        print('Fim do programa')
+        break
+    else:
+        lista.append(num)
+        if num % 2 == 0:
+            media_pares.append(num)
+
+print(f'A soma de todos os números que foram digitados é {sum(lista)}')
+print(f'A quantidade de números que foram digitados é {len(lista)}')
+print(f'A média dos números digitados é {statistics.mean(lista)}')
+print(f'O maior número digitado foi: {max(lista)}')
+print(f'O menor número digitado foi: {min(lista)}')
+print(f'A média dos números pares digitados é {statistics.mean(media_pares)}') 
+
+61)
+
+
+
 """
 
