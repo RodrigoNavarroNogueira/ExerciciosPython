@@ -744,8 +744,27 @@ else:
  
 55)
 
+def contador_divisor(numero):
+    divisores = 0
+    for n in range(1, numero + 1):
+        if numero % n == 0:
+            divisores += 1
+    return divisores
+
+lista = []
+num = int(input('Digite um numero maior que 1: '))
+if num <= 0:
+    print('Digite um numero positivo maior que 1')
+else:
+    for numero in range(1, num + 1):
+        divisores = contador_divisor(numero)
+        if divisores == 2:
+            lista.append(numero)
+    print(f'A soma de todos os números primos até {num} é {sum(lista)}')
+
+56)
+
+
+
 """
-
-
-    
 
