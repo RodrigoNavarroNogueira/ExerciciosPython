@@ -895,5 +895,49 @@ for numero in range(100, 999 + 1):
             lista.append(resultado)
 print(f'O maior numero encontrado foi {max(lista)}')
 
-"""
+62)
 
+def contar_letras_em_palavras(numero):
+    unidades = ["", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"]
+    dezenas = ["", "dez", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa"]
+    centenas = ["", "cem", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos"]
+
+    if numero == 1000:
+        return len("mil")
+    else:
+        texto = ""
+        if numero >= 100:
+            texto += centenas[numero // 100]
+            if numero % 100 != 0:
+                texto += "e"
+        numero %= 100
+        if numero >= 10:
+            if texto:
+                texto += "e"
+            texto += dezenas[numero // 10]
+            numero %= 10
+        if numero > 0:
+            if texto:
+                texto += "e"
+            texto += unidades[numero]
+        print(texto)
+        return len(texto)
+
+
+total_letras = 0
+
+for numero in range(1, 1001):
+    total_letras += contar_letras_em_palavras(numero)
+
+print(f"O total de letras utilizadas ao escrever números de 1 a 1000 em palavras é: {total_letras}")
+
+"""
+numeros = []
+quadrados = []
+for n in range(1, 11):
+    n = float(input('Digite um numero: '))
+    numeros.append(n)
+    quadrados.append(n ** 2)
+
+print(numeros)
+print(quadrados)
