@@ -27,5 +27,19 @@ print(f'Os numeros digitados foram: {lista}')
 
 3)
 
+numeros = []
+quadrados = []
+for n in range(1, 11):
+    n = float(input('Digite um numero: '))
+    numeros.append(n)
+    quadrados.append(n ** 2)
+
+print(numeros)
+print(quadrados)
+
+4)
+
+
 
 """
+
