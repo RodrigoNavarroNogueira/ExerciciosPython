@@ -52,6 +52,17 @@ print(f'A soma entre os indices é {lista[valor_um] + lista[valor_dois]}')
 
 5)
 
+pares = 0
+
+for n in range(1, 11):
+    n = int(input('Digite um numero'))
+    if n % 2 == 0:
+        pares += 1
+
+print(f'Voce digitou {pares} pares')
+
+6)
+
 
 
 """
