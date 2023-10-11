@@ -39,6 +39,19 @@ print(quadrados)
 
 4)
 
+lista = []
+
+for n in range(1, 9):
+    n = int(input('Digite um numero: '))
+    lista.append(n)
+
+valor_um = int(input('Digite o indice que deseja somar: '))
+valor_dois = int(input('Digite o indice numero que deseja somar: '))
+
+print(f'A soma entre os indices é {lista[valor_um] + lista[valor_dois]}')
+
+5)
+
 
 
 """
