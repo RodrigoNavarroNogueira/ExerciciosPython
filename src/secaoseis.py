@@ -932,12 +932,3 @@ for numero in range(1, 1001):
 print(f"O total de letras utilizadas ao escrever números de 1 a 1000 em palavras é: {total_letras}")
 
 """
-numeros = []
-quadrados = []
-for n in range(1, 11):
-    n = float(input('Digite um numero: '))
-    numeros.append(n)
-    quadrados.append(n ** 2)
-
-print(numeros)
-print(quadrados)
