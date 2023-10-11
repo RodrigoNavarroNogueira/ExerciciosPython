@@ -15,4 +15,17 @@ a.insert(4, 100)
 for n in a:
     print(n)
 
+2)
+
+lista = []
+
+for n in range(1, 7):
+    valor = int(input('Digite um valor: '))
+    lista.append(valor)
+    
+print(f'Os numeros digitados foram: {lista}')
+
+3)
+
+
 """
