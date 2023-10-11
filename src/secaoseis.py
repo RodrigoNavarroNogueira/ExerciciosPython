@@ -884,7 +884,16 @@ print(f'A média dos números pares digitados é {statistics.mean(media_pares)}'
 
 61)
 
+lista = []
 
+for numero in range(100, 999 + 1):
+    for divisor in range(100, 999 + 1):
+        resultado = numero * divisor
+        string = str(resultado)
+        reverso = string[::-1]
+        if string == reverso:
+            lista.append(resultado)
+print(f'O maior numero encontrado foi {max(lista)}')
 
 """
 
