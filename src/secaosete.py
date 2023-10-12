@@ -131,6 +131,22 @@ print(f'A lista possui {negativos} números negativos e a soma dos pares é {sum
 
 12)
 
+import statistics
+
+lista = list()
+
+for n in range(1, 6):
+    n = float(input('Digite um numero: '))
+    lista.append(n)
+
+    
+print(lista)
+print(f'O maior valor da lista é o {max(lista)}')
+print(f'O menor valor da lista é o {min(lista)}')
+print(f'A média dos valores é {statistics.mean(lista)}')
+
+13)
+
 
 
 """
