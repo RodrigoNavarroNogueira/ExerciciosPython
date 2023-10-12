@@ -117,6 +117,20 @@ print(f'A media das notas será {statistics.mean(lista)}')
 
 11)
 
+positivos = list()
+negativos = 0
+
+for n in range(1, 11):
+    n = float(input('Digite um numero: '))
+    if n > 0:
+        positivos.append(n)
+    else:
+        negativos += 1
+    
+print(f'A lista possui {negativos} números negativos e a soma dos pares é {sum(positivos)}')
+
+12)
+
 
 
 """
