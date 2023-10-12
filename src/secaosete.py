@@ -157,6 +157,27 @@ print(f'O maior valor encontra-se na posição {lista.index(max(lista))}, e o me
 
 14)
 
+lista = []
+duplicados = []
+
+for n in range(1, 11):
+    n = int(input('Digite um numero: '))
+    lista.append(n)
+
+for n in lista:
+    num = lista.count(n)
+    if num >= 2:
+        if n not in duplicados:
+            duplicados.append(n)
+
+print(lista)
+if len(duplicados) == 0:
+    print('Não existem elementos duplicados')
+else:
+    print(f'Os elementos duplicados são: {duplicados}')
+
+15)
+
 
 
 """
