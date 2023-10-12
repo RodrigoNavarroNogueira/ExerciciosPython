@@ -105,6 +105,18 @@ print(f'A ordem reversa dos elementos pares é {list(reversed(lista))}')
 
 10)
 
+import statistics
+
+lista = []
+
+for n in range(1, 16):
+    n = float(input('Digite a nota do aluno: '))
+    lista.append(n)
+    
+print(f'A media das notas será {statistics.mean(lista)}')
+
+11)
+
 
 
 """
