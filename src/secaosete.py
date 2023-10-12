@@ -71,4 +71,18 @@ for n in range(1, 11):
 
 print(f'O maior numero digitado foi {max(lista)} e o menor foi {min(lista)}')
 
+7)
+
+lista = []
+
+for n in range(1, 11):
+    n = int(input('Digite um numero: '))
+    lista.append(n)
+    
+print(f'O maior elemento encontrado na lista é o {max(lista)} e ele está na posição {lista.index(max(lista))}')
+
+8)
+
+
+
 """
