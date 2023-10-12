@@ -147,6 +147,16 @@ print(f'A média dos valores é {statistics.mean(lista)}')
 
 13)
 
+lista = list()
+
+for n in range(1, 6):
+    n = float(input('Digite um numero: '))
+    lista.append(n)
+
+print(f'O maior valor encontra-se na posição {lista.index(max(lista))}, e o menor na posição {lista.index(min(lista))}')
+
+14)
+
 
 
 """
