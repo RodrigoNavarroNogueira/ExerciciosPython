@@ -92,4 +92,19 @@ for n in range(1, 7):
     
 print(f'A ordem reversa dos elementos é {list(reversed(lista))}')
 
+9)
+
+lista = []
+
+for n in range(1, 7):
+    n = int(input('Digite um numero: '))
+    if n % 2 == 0:
+        lista.append(n)
+    
+print(f'A ordem reversa dos elementos pares é {list(reversed(lista))}')
+
+10)
+
+
+
 """
