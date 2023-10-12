@@ -63,7 +63,12 @@ print(f'Voce digitou {pares} pares')
 
 6)
 
+lista = []
 
+for n in range(1, 11):
+    n = int(input('Digite um numero'))
+    lista.append(n)
+
+print(f'O maior numero digitado foi {max(lista)} e o menor foi {min(lista)}')
 
 """
-
