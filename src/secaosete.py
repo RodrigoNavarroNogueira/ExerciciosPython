@@ -83,6 +83,13 @@ print(f'O maior elemento encontrado na lista é o {max(lista)} e ele está na po
 
 8)
 
+lista = []
 
+for n in range(1, 7):
+    n = int(input('Digite um numero: '))
+    lista.append(n)
+
+    
+print(f'A ordem reversa dos elementos é {list(reversed(lista))}')
 
 """
