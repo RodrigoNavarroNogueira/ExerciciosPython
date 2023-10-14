@@ -246,6 +246,21 @@ print(lista)
 
 18)
 
+lista = list()
+
+for n in range(10):
+    n = int(input(f'Digite o {n + 1}º numero: '))
+    lista.append(n)
+print(lista)
+
+numero = int(input('Qual será o numero X? '))
+
+for num in lista:
+    if numero % num == 0:
+        print(f'É divisivel pelo número {num}')
+
+19)
+
 
 
 """
