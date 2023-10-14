@@ -190,6 +190,45 @@ print(f'A lista sem repetir os valores será {lista}')
 
 16)
 
+lista = list()
+escolha = 4
+lista_str = list()
+lista_reverso_str = list()
 
+def elementos_lista_de_inteiros(lista):
+    for n in lista:
+        lista_str.append(str(n))
+    lista_completa = ' '.join(lista_str)
+    return lista_completa
+
+
+def elementos_lista_de_inteiros_reversos(reverso):
+    for n in reverso:
+        lista_reverso_str.append(str(n))
+    lista_completa = ' '.join(lista_reverso_str)
+    return lista_completa
+
+
+for n in range(1, 6):
+    n = float(input('Digite um numero: '))
+    lista.append(n) 
+
+lista_str = elementos_lista_de_inteiros(lista)
+reverso = list(reversed(lista))
+lista_reverso = elementos_lista_de_inteiros_reversos(reverso)
+
+while escolha != 0:
+    escolha = int(input("Qual a sua escolha?
+(0) Para encerrar o programa
+(1) Mostrar a lista na ordem direta
+(2) Mostrar a lista na ordem inversa"))
+    if escolha == 1:
+        print(lista_str)
+    elif escolha == 2:
+        print(lista_reverso)
+    elif escolha == 0:
+        print('Até logo')
+    else:
+        print('Opção inválida')
 
 """
