@@ -231,4 +231,21 @@ while escolha != 0:
     else:
         print('Opção inválida')
 
+17)
+
+lista = list()
+
+for n in range(1, 11):
+    n = int(input('Digite um numero: '))
+    if n < 0:
+        lista.append(0)
+    else:
+        lista.append(n)
+
+print(lista)
+
+18)
+
+
+
 """
