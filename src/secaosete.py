@@ -178,6 +178,18 @@ else:
 
 15)
 
+lista = []
+duplicados = []
+
+for n in range(1, 21):
+    n = int(input('Digite um numero: '))
+    if n not in lista:
+        lista.append(n)
+
+print(f'A lista sem repetir os valores será {lista}')
+
+16)
+
 
 
 """
