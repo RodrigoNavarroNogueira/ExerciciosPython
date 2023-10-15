@@ -191,7 +191,7 @@ print(f'A lista sem repetir os valores será {lista}')
 16)
 
 lista = list()
-escolha = 4
+escolha = None
 lista_str = list()
 lista_reverso_str = list()
 
@@ -210,7 +210,7 @@ def elementos_lista_de_inteiros_reversos(reverso):
 
 
 for n in range(1, 6):
-    n = float(input('Digite um numero: '))
+    n = float(input(f'Digite o {n} numero: '))
     lista.append(n) 
 
 lista_str = elementos_lista_de_inteiros(lista)
@@ -218,12 +218,14 @@ reverso = list(reversed(lista))
 lista_reverso = elementos_lista_de_inteiros_reversos(reverso)
 
 while escolha != 0:
+    breakpoint()
     escolha = int(input("Qual a sua escolha?
 (0) Para encerrar o programa
 (1) Mostrar a lista na ordem direta
 (2) Mostrar a lista na ordem inversa"))
     if escolha == 1:
         print(lista_str)
+        breakpoint()
     elif escolha == 2:
         print(lista_reverso)
     elif escolha == 0:
@@ -260,6 +262,16 @@ for num in lista:
         print(f'É divisivel pelo número {num}')
 
 19)
+
+lista = []
+
+for i in range(1, 51):
+    n = (i + 5 + i) % (i + 1)
+    lista.append(n)
+
+print(lista)
+
+20)
 
 
 
