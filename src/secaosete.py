@@ -321,6 +321,32 @@ print(c)
 
 22)
 
+lista1 = list()
+lista2 = list()
+lista3 = list()
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    lista1.append(n)
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    lista2.append(n)
+
+indice = 0
+
+for item in lista1:
+    if indice == 0:
+        lista3.append(item)
+    elif indice > 0 and indice % 2 == 0:
+        lista3.append(item)
+    elif indice > 0 and indice % 2 == 1:
+        lista3.append(lista2[indice])
+    indice += 1
+
+print(lista3)
+
+23)
+
 
 
 """
