@@ -273,6 +273,35 @@ print(lista)
 
 20)
 
+lista = list()
+impares = list()
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero entre 0 á 50: '))
+    lista.append(n)
+    if n % 2 == 1:
+        impares.append(n)
+
+print(lista)
+print(impares)
+
+for num in range(0, len(lista), 2):
+    num1 = lista[num]
+    num2 = lista[num + 1]
+    print(num1, num2)
+
+for num in range(0, len(impares), 2):
+    try:
+        num1 = impares[num]
+        num2 = impares[num + 1]
+        print(num1, num2)
+    except IndexError:
+        print(num1)
+
+21)
+
 
 
 """
+
+
