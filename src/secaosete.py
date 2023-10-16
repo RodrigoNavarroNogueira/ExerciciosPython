@@ -300,8 +300,30 @@ for num in range(0, len(impares), 2):
 
 21)
 
+a = list()
+b = list()
+c = list()
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    a.append(n)
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    b.append(n)
+
+indice = 0
+
+for item in a:
+    c.append(item - b[indice])
+    indice += 1
+
+print(c)
+
+22)
+
 
 
 """
+
 
 
