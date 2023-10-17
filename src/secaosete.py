@@ -347,6 +347,60 @@ print(lista3)
 
 23)
 
+lista1 = list()
+lista2 = list()
+lista3 = list()
+
+for n in range(1, 6):
+    n = float(input(f'Digite o {n} numero da primeira lista: '))
+    lista1.append(n)
+    
+for n in range(1, 6):
+    n = float(input(f'Digite o {n} numero da segunda lista: '))
+    lista2.append(n)
+    
+indice = 0
+escalar = 1
+
+for num in lista1:
+    lista3.append((num * escalar) + (lista2[indice] * escalar))
+    indice += 1
+    escalar += 1
+
+print(lista1)
+print(lista2)
+print(f'Produto escalar: {sum(lista3)} ')
+
+Primeiro conjunto de números: [1.0, 2.0, 3.0, 4.0, 5.0]
+Segundo conjunto de números: [6.0, 7.0, 8.0, 9.0, 10.0]
+Produto escalar: 130.0         6   14    24   36
+
+=================================================================================
+
+lista1 = list()
+lista2 = list()
+lista3 = list()
+
+for n in range(1, 6):
+    n = float(input(f'Digite o {n} numero da primeira lista: '))
+    lista1.append(n)
+    
+for n in range(1, 6):
+    n = float(input(f'Digite o {n} numero da segunda lista: '))
+    lista2.append(n)
+    
+indice = 0
+
+for num in lista1:
+    lista3.append(num * lista2[indice])
+    indice += 1
+
+print(lista1)
+print(lista2)
+print(f'Produto escalar: {sum(lista3)} ')
+
+24)
+
 lista1 = []
 lista2 = []
 lista3 = []
