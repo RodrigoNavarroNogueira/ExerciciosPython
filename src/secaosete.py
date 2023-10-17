@@ -420,5 +420,27 @@ print(lista1)
 print(lista2)
 print(lista3)
 
+25)
+
+numero = 1
+
+lista = list()
+while len(lista) <= 100:
+    if numero % 7 != 0:
+        lista.append(numero)
+    else:
+        stri = str(numero)
+        if '7' in stri:
+            lista.append(numero)
+    numero += 1
+
+print(lista)
+
+26)
+
+
+
 """
+
+
 
