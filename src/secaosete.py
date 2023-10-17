@@ -347,9 +347,24 @@ print(lista3)
 
 23)
 
+lista1 = []
+lista2 = []
+lista3 = []
+listas = [lista1, lista2, lista3]
 
+for lista in listas:
+    aluno = float(input('Digite o numero do aluno: '))
+    altura = float(input('Digite a altura do aluno: '))
+    lista.append(aluno)
+    lista.append(altura)
+    
+menor = min(listas, key=lambda lista: lista[1])
+maior = max(listas, key=lambda lista: lista[1])
+print(f'O menor aluno é o {menor}')
+print(f'O maior aluno é o {maior}')
+print(lista1)
+print(lista2)
+print(lista3)
 
 """
-
-
 
