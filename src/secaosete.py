@@ -438,9 +438,32 @@ print(lista)
 
 26)
 
+27)
 
+def contador_divisor(num):
+    divisores = 0
+    for n in range(1, num + 1):
+        if num % n == 0:
+            divisores += 1
+    return divisores
+
+lista = []
+primo = []
+posicao = []
+for n in range(10):
+    num = int(input('Digite um numero maior que 1: '))
+    lista.append(num)
+
+    if num == 1 or num % 2 == 0 and num != 2:
+        pass
+    else:
+        divisores = contador_divisor(num)
+        if divisores > 2:
+            pass
+        else:
+            primo.append(num)
+            posicao.append(lista.index(num))
+
+print(f'os numeros {primo} sao primos e estao na posicões {posicao}')
 
 """
-
-
-
