@@ -466,4 +466,24 @@ for n in range(10):
 
 print(f'os numeros {primo} sao primos e estao na posicões {posicao}')
 
+28)
+
+v = list()
+v1 = list()
+v2 = list()
+utilizados = list()
+
+for n in range(10):
+    n = int(input(f'Digite o {n} numero: '))
+    v.append(n)
+    if n % 2 == 0:
+        v2.append(n)
+        utilizados.append(n)
+    elif n % 2 == 1:
+        v1.append(n)
+        utilizados.append(n)
+print(f'os elementos que foram utilizados no v1 e v2 são: {utilizados}') 
+
+29)
+
 """
