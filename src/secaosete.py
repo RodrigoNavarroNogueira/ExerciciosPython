@@ -486,4 +486,33 @@ print(f'os elementos que foram utilizados no v1 e v2 são: {utilizados}')
 
 29)
 
+=========================================================
+
+Resolução de exericio extra:
+
+from collections import Counter
+
+def funcao(): 
+    string = input('Digite uma string: ')
+    ao = Counter(string)
+    for chave in ao:
+        if ao[chave] >= 10:
+            div = ao[chave] // 9
+            print(f'9{chave}' * div, end='')
+            resto = ao[chave] % 9
+            print(f'{resto}{chave}', end='')
+        else:
+            print(f'{ao[chave]}{chave}', end='')
+
+
+ao = funcao()
+
 """
+
+
+
+
+
+
+
+
