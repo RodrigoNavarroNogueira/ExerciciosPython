@@ -486,6 +486,27 @@ print(f'os elementos que foram utilizados no v1 e v2 são: {utilizados}')
 
 29)
 
+utilizados = list()
+pares = list()
+soma_pares = 0
+impares = list()
+qtd_impares = 0
+
+for n in range(6):
+    n = int(input(f'Digite o {n} numero: '))
+    utilizados.append(n)
+    if n % 2 == 0:
+        pares.append(n)
+        soma_pares += n
+    elif n % 2 == 1:
+        impares.append(n)
+        qtd_impares += 1
+
+print(f'Os numeros pares digitados são {pares}')
+print(f'A soma dos numeros pares é {soma_pares}')
+print(f'Os numeros imperes digitados são {impares}')
+print(f'A quantidade de numeros impares digitados: {qtd_impares}') 
+
 =========================================================
 
 Resolução de exericio extra:
@@ -508,7 +529,6 @@ def funcao():
 ao = funcao()
 
 """
-
 
 
 
