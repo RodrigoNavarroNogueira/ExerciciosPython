@@ -509,7 +509,7 @@ print(f'A quantidade de numeros impares digitados: {qtd_impares}')
 
 =========================================================
 
-Resolução de exericio extra:
+Resolução de exercicio extra:
 
 from collections import Counter
 
@@ -527,6 +527,28 @@ def funcao():
 
 
 ao = funcao()
+
+30)
+
+lista1 = list()
+lista2 = list()
+lista3 = list()
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    lista1.append(n)
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    lista2.append(n)
+
+for n in lista1:
+    if n in lista2:
+        lista3.append(n)
+
+print(lista1)
+print(lista2)
+print(f'Os elementos que estão repetidos são {lista3}')
 
 """
 
