@@ -550,10 +550,25 @@ print(lista1)
 print(lista2)
 print(f'Os elementos que estão repetidos são {lista3}')
 
+31)
+
+lista1 = list()
+lista2 = list()
+set3 = set()
+
+for n in range(1, 4):
+    n = int(input(f'Digite o {n} numero: '))
+    lista1.append(n)
+
+for n in range(1, 4):
+    n = int(input(f'Digite o {n} numero: '))
+    lista2.append(n)
+
+set3 = set(lista1 + lista2)
+
+print(f'A união entre os vetores sem repetir elementos é {set3}')
+
 """
-
-
-
 
 
 
