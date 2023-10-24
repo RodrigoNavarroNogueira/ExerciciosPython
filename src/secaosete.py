@@ -525,8 +525,9 @@ def funcao():
         else:
             print(f'{ao[chave]}{chave}', end='')
 
-
 ao = funcao()
+
+=========================================================
 
 30)
 
@@ -552,24 +553,69 @@ print(f'Os elementos que estão repetidos são {lista3}')
 
 31)
 
-lista1 = list()
-lista2 = list()
+lista1 = set()
+lista2 = set()
 set3 = set()
 
-for n in range(1, 4):
+for n in range(1, 11):
     n = int(input(f'Digite o {n} numero: '))
-    lista1.append(n)
+    lista1.add(n)
 
-for n in range(1, 4):
+for n in range(1, 11):
     n = int(input(f'Digite o {n} numero: '))
-    lista2.append(n)
+    lista2.add(n)
 
-set3 = set(lista1 + lista2)
+set3 = lista1.union(lista2)
 
 print(f'A união entre os vetores sem repetir elementos é {set3}')
 
+32)
+
+x = list()
+y = list()
+soma = list()
+produto = []
+numero = 1
+n = 0
+num = 0
+numero_y = 1
+a = 0
+
+while len(x) != 5:
+    n = int(input(f'Digite o {numero} numero: '))
+    if n in x:
+        print(f'Voce digitou o elemento {n} que está repetido!')
+    else:
+        x.append(n)
+        numero += 1
+
+while len(y) != 5:
+    num = int(input(f'Digite o {numero_y} numero: '))
+    if num in y:
+        print(f'Voce digitou o elemento {num} que está repetido!')
+    else:
+        y.append(num)
+        numero_y += 1
+
+for elemento in y:
+    res = x[a] + elemento
+    soma.append(res)
+    a += 1
+
+a = 0
+
+for elemento in y:
+    res = x[a] * elemento
+    produto.append(res)
+    a += 1
+
+x = set(x)
+y = set(y)
+
+print(f'A soma entre de cada elemento da mesma posição é {soma}')
+print(f'O produto entre cada elemento da mesmo posição é {produto}')
+print(f'Diferença: {x.difference(y)}')
+print(f'Interseção: {x.intersection(y)}')
+print(f'União: {x.union(y)}')
+
 """
-
-
-
-
