@@ -634,6 +634,21 @@ print(vetor)
 
 34)
 
+x = list()
+numero = 1
+n = 0
+
+
+while len(x) != 10:
+    n = int(input(f'Digite o {numero} numero: '))
+    if n in x:
+        print(f'Voce digitou o elemento {n} que está repetido!')
+    else:
+        x.append(n)
+        numero += 1
+
+print(x)
+
 """
 
 
