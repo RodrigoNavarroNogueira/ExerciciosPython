@@ -618,4 +618,22 @@ print(f'Diferença: {x.difference(y)}')
 print(f'Interseção: {x.intersection(y)}')
 print(f'União: {x.union(y)}')
 
+33)
+
+vetor = list()
+
+for n in range(1, 16):
+    n = int(input(f'Digite o {n} numero'))
+    vetor.append(n)
+print(vetor)
+
+for elemento in vetor:
+    if elemento == 0:
+        vetor.remove(0)
+print(vetor)
+
+34)
+
 """
+
+
