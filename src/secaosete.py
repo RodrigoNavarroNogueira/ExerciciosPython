@@ -649,6 +649,26 @@ while len(x) != 10:
 
 print(x)
 
+35)
+
+lista = list()
+lista2 = list()
+n1 = input('Digite o primeiro numero: ')
+n2 = input('Digite o segundo numero: ')
+
+for n in n1:
+    lista.append(int(n))
+
+for n in n2:
+    lista2.append(int(n))
+
+print(lista)
+print(lista2)
+
+36)
+
+
+
 """
 
 
