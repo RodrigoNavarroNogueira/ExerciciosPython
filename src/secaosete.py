@@ -667,8 +667,11 @@ print(lista2)
 
 36)
 
-
+lista = []
+for n in range(1, 11):
+    n = float(input(f'Digite o {n} numero: '))
+    lista.append(n)
+lista.sort()
+print(lista)
 
 """
-
-
