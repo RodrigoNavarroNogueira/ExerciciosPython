@@ -674,4 +674,23 @@ for n in range(1, 11):
 lista.sort()
 print(lista)
 
+
+37)
+
+lista = []
+for n in range(1, 11):
+    n = float(input(f'Digite o {n} numero: '))
+    lista.append(n)
+
+
+print(lista)
+a = sorted(lista[:6])
+b = sorted(lista[7:], reverse=True)
+c = a + b
+print(c)
+print(sorted(c))
+
+38)
+
+
 """
