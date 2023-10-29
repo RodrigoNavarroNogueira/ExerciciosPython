@@ -703,8 +703,6 @@ print(lista)
 
 39)
 
-39)
-
 def calcular_triangulo_pascal(n):
     triangulo = []
     for linha in range(n):
@@ -728,6 +726,7 @@ triangulo = calcular_triangulo_pascal(n)
 imprimir_triangulo_pascal(triangulo)
 
 ------------------------------------------
+Exercicios formação cientista de dados
 
 1)
 
