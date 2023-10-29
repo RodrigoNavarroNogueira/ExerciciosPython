@@ -692,6 +692,15 @@ print(sorted(c))
 
 38)
 
+lista = []
+
+for n in range(1, 11):
+    n = int(input(f'Digite o {n} numero: '))
+    lista.append(n)
+    lista.sort()
+    
+print(lista)
+
 ------------------------------------------
 
 1)
