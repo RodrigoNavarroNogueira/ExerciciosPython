@@ -701,6 +701,32 @@ for n in range(1, 11):
     
 print(lista)
 
+39)
+
+39)
+
+def calcular_triangulo_pascal(n):
+    triangulo = []
+    for linha in range(n):
+        nova_linha = []
+        for coluna in range(linha + 1):
+            if coluna == 0 or coluna == linha:
+                nova_linha.append(1)
+            else:
+                anterior = triangulo[linha - 1][coluna - 1]
+                proximo = triangulo[linha - 1][coluna]
+                nova_linha.append(anterior + proximo)
+        triangulo.append(nova_linha)
+    return triangulo
+
+def imprimir_triangulo_pascal(triangulo):
+    for linha in triangulo:
+        print(' '.join(map(str, linha)))
+
+n = int(input("Digite o número de linhas do Triângulo de Pascal: "))
+triangulo = calcular_triangulo_pascal(n)
+imprimir_triangulo_pascal(triangulo)
+
 ------------------------------------------
 
 1)
