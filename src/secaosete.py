@@ -692,5 +692,37 @@ print(sorted(c))
 
 38)
 
+------------------------------------------
+
+1)
+
+def amplitude(lista):
+    amplitude = max(lista) - min(lista)
+    print(f'Amplitude: {amplitude}')
+
+lista = [12,23,45,2,100]
+
+amplitude(lista)
+
+2)
+
+def imprimir(string):
+    for letra in string:
+        print(letra)
+
+imprimir('Python')
+
+3)
+
+def peso_carga(peso):
+    if peso <= 10:
+        print('O valor será de 50 reais')
+    elif peso >= 11 and peso <=20:
+        print('O valor será de 80 reais')
+    elif peso > 20:
+        print('Infelizmente não será aceito esse peso')
+
+peso_carga(21)
 
 """
+
