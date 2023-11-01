@@ -22,5 +22,6 @@ print(f'Na matriz, existem {total} numeros maiores que 10')
 2)
 
 
-
+=======
+Começando exercicios de data scientist
 """
