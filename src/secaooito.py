@@ -92,6 +92,24 @@ def pega_numero():
 raio = pega_numero()
 print(area(raio))
 
+6)
+
+def funcao(numeros):
+    hora = numeros[0] * 3600
+    minuto = numeros[1] * 60
+    segundos = hora + minuto + numeros[2]
+    return f'A quantidade digitada dá {segundos} segundos'
+    
+    
+def pega_numero():
+    num1 = int(input('Digite um numero: '))
+    num2 = int(input('Digite um numero: '))
+    num3 = int(input('Digite um numero: '))
+    return num1, num2, num3
+    
+numeros = pega_numero()
+print(funcao(numeros))
+
 """
 # 976204000
 
