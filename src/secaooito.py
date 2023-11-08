@@ -110,6 +110,20 @@ def pega_numero():
 numeros = pega_numero()
 print(funcao(numeros))
 
+7)
+
+def funcao(numeros):
+    f = numeros * (9 / 5) + 32
+    return f'A temperatura de {numeros} graus Celsius é equivalente a {f:.2f} graus Fahrenheit'
+    
+    
+def pega_numero():
+    numero = int(input('Digite um numero: '))
+    return numero
+    
+numeros = pega_numero()
+print(funcao(numeros))
+
 """
 # 976204000
 
