@@ -41,6 +41,41 @@ def funcao(numero):
     else:
         return 0
 
+
+def pega_numero():
+    numero = int(input('Digite um numero: '))
+    return numero
+
+
+numero = pega_numero()
+print(funcao(numero))
+
+4)
+
+def funcao(numero):
+    if numero <= 0:
+        return 'Não é um quadrado perfeito'
+    else:
+        num = 1
+        while True:
+            quadrado = num * num
+            if quadrado == numero:
+                return f'O numero {numero} é um quadrado perfeito.'
+            else:
+                num += 1
+                if num == numero:
+                    return 'Não é um quadrado perfeito'
+                    break
+                
+
+def pega_numero():
+    numero = int(input('Digite um numero: '))
+    return numero
+
+
+numero = pega_numero()
+print(funcao(numero))
+
 """
 # 976204000
 
