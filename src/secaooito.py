@@ -31,6 +31,16 @@ meses = {1: 'Janeiro', 2: 'Fevereiro', 3: 'Março', 4: 'Abril', 5: 'Maio', 6: 'J
 data = pega_data()
 funcao(meses, data)
 
-"""
+3)
 
+def funcao(numero):
+    if numero > 0:
+        return 1
+    elif numero < 0:
+        return -1
+    else:
+        return 0
+
+"""
+# 976204000
 
