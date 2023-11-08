@@ -138,6 +138,19 @@ a = int(input('Digite um numero '))
 b = int(input('Digite um numero '))
 print(funcao(a, b))
 
+9)
+
+import math
+
+def funcao(a, b):
+    v = math.pi * (b ** 2) * a
+    return f'O volume é {v}'
+
+
+a = int(input('Digite um numero '))
+b = int(input('Digite um numero '))
+print(funcao(a, b))
+
 
 """
 # 976204000
