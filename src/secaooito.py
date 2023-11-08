@@ -76,6 +76,22 @@ def pega_numero():
 numero = pega_numero()
 print(funcao(numero))
 
+5)
+
+import math
+
+def area(raio):
+		return (4 / 3) * math.pi * (raio ** 3)
+ 
+
+def pega_numero():
+    numero = int(input('Digite um numero: '))
+    return numero
+
+
+raio = pega_numero()
+print(area(raio))
+
 """
 # 976204000
 
