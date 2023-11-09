@@ -151,6 +151,20 @@ a = int(input('Digite um numero '))
 b = int(input('Digite um numero '))
 print(funcao(a, b))
 
+10)
+
+def funcao(numeros):
+    return max(numeros)
+
+
+def pega_numero():
+    a = int(input('Digite um numero '))
+    b = int(input('Digite um numero '))
+    return a, b
+    
+numeros = pega_numero()    
+print(funcao(numeros))
+
 
 """
 # 976204000
