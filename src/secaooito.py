@@ -165,6 +165,40 @@ def pega_numero():
 numeros = pega_numero()    
 print(funcao(numeros))
 
+11)
+
+def funcao(numeros, letra):
+    if letra == 'a':
+        media_a = sum(numeros) / 3
+        return f' A media aritmetica das notas é {media_a}'
+    else:
+        p = 0
+        for n in numeros:
+            mult.append(n * pesos[p])
+            p += 1
+        soma = sum(mult)
+        soma_pesos = sum(pesos)
+        media_p = soma / soma_pesos
+        return f' A media ponderada das notas é {media_p}'
+
+
+def pega_numero():
+    a = int(input('Digite um numero '))
+    b = int(input('Digite um numero '))
+    c = int(input('Digite um numero '))
+    return a, b, c
+
+
+def tipo_media():
+    letra = input('Qual tipo de média vc deseja? ')
+    return letra
+
+
+mult = []
+pesos = 5, 3, 2
+numeros = pega_numero()
+letra = tipo_media()
+print(funcao(numeros, letra))
 
 """
 # 976204000
