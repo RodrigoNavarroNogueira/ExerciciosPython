@@ -241,6 +241,28 @@ def pega_numero():
 # numeros = pega_numero()
 print(funcao(1, 6, '+'))
 
+14)
+
+def funcao(numeros):
+    km = numeros[0] / numeros[1]
+    print(km)
+    if km < 8:
+        return 'Venda o carro'
+    elif km >= 8 and km <= 11:
+        return 'Economico'
+    elif km >= 12:
+        return 'Super economico'
+
+
+def pega_numero():
+    a = int(input('Digite um numero: '))
+    b = int(input('Quantos litros? '))
+    return a, b
+
+
+numeros = pega_numero()
+print(funcao(numeros))
+
 """
 # 976204000
 
