@@ -310,6 +310,19 @@ def pega_numero():
 # numeros = pega_numero()
 print(funcao(2, 4))
 
+22)
+
+def funcao(a):
+    for n in range(a + 1):
+        print("!" * n)
+
+def pega_numero():
+    a = int(input('Enter 1st number: '))
+    return a
+
+a = pega_numero()
+funcao(a)
+
 
 """
 # 976204000
