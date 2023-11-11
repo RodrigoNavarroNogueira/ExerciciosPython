@@ -218,7 +218,29 @@ def pega_numero():
     a = int(input('Digite um numero maior que 0: '))
     return a
 
+13)
+
+def funcao(a, b, sim):
+    if sim == '+':
+        return a + b
+    elif sim == '-':
+        return a - b
+    elif sim == '/':
+        return a / b
+    elif sim == '*':
+        return a * b
+
+
+def pega_numero():
+    a = int(input('Digite um numero: '))
+    b = int(input('Digite um numero: '))
+    sim = input('Digite o operador que deseja: ')
+    return a, b, sim
     
+
+# numeros = pega_numero()
+print(funcao(1, 6, '+'))
+
 """
 # 976204000
 
