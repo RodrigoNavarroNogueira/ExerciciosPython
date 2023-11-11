@@ -200,6 +200,25 @@ numeros = pega_numero()
 letra = tipo_media()
 print(funcao(numeros, letra))
 
+12)
+
+def funcao(numeros):
+    if numeros <= 0:
+        print('Numero Inválido')
+    else:
+        soma = 0
+        b = str(numeros)
+        for n in b:
+            n = int(n)
+            soma += n
+        print(f'A soma dos algarismos é {soma}')
+
+
+def pega_numero():
+    a = int(input('Digite um numero maior que 0: '))
+    return a
+
+    
 """
 # 976204000
 
