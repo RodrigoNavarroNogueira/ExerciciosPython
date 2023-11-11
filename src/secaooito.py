@@ -277,6 +277,25 @@ def pega_numero():
 numeros = pega_numero()
 print(funcao(numeros))
 
+17)
+
+def funcao(numeros):
+    soma = 0
+    for n in range(numeros[0], numeros[1]):
+        soma += n
+    return soma - 1
+
+
+def pega_numero():
+    a = int(input('Digite um numero: '))
+    b = int(input('Digite um numero: '))
+    return a, b
+
+
+numeros = pega_numero()
+print(funcao(numeros))
+
+
 """
 # 976204000
 
