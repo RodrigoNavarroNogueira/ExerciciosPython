@@ -263,6 +263,20 @@ def pega_numero():
 numeros = pega_numero()
 print(funcao(numeros))
 
+16)
+
+def funcao(numeros):
+    return '=' * numeros
+
+
+def pega_numero():
+    a = int(input('Digite um numero: '))
+    return a
+
+
+numeros = pega_numero()
+print(funcao(numeros))
+
 """
 # 976204000
 
