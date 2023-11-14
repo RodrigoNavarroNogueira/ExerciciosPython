@@ -323,6 +323,21 @@ def pega_numero():
 a = pega_numero()
 funcao(a)
 
+23)
+
+def funcao(a):
+    for n in range(a + 1):
+        print("*" * n)
+    for num in range(a - 1, 0, -1):
+        print("*" * num)
+
+def pega_numero():
+    a = int(input('Enter 1st number: '))
+    return a
+
+a = pega_numero()
+funcao(a)
+
 
 """
 # 976204000
