@@ -370,4 +370,28 @@ def pega_numero():
 # a = pega_numero()
 print(funcao(5, 90))
 
+40)
+
+def funcao(numeros):
+    soma = 0
+    for n in numeros:
+        if n % 2 == 0:
+            soma += 1
+    return f'O vetor possui {soma} elementos pares'
+    
+    
+def pega_numero():
+    while True:
+        a = int(input('Enter 1st number: '))
+        if a == 0:
+            break
+        else:
+            numeros.append(a)
+    return numeros
+
+
+numeros = []
+numeros = pega_numero()
+print(funcao(numeros))
+
 """
