@@ -414,6 +414,26 @@ numeros = []
 numeros = pega_numero()
 print(funcao(numeros))
 
+42)
 
+import statistics
+
+def funcao(numeros):
+    return statistics.mean(numeros)
+    
+    
+def pega_numero():
+    while True:
+        a = int(input('Enter 1st number: '))
+        if a == 0:
+            break
+        else:
+            numeros.append(a)
+    return numeros
+
+
+numeros = []
+numeros = pega_numero()
+print(funcao(numeros))
 
 """
