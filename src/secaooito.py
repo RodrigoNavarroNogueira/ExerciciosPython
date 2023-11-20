@@ -338,7 +338,19 @@ def pega_numero():
 a = pega_numero()
 funcao(a)
 
+26)
+
+def funcao(a):
+    soma = 0
+    for n in range(1, a + 1):
+        soma += n
+    return f'A soma de todos os numeros é {soma}'
+
+def pega_numero():
+    a = int(input('Enter 1st number: '))
+    return a
+
+a = pega_numero()
+print(funcao(a))
 
 """
-# 976204000
-
