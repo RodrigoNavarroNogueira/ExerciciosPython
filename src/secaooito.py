@@ -353,4 +353,21 @@ def pega_numero():
 a = pega_numero()
 print(funcao(a))
 
+39)
+
+def funcao(a, b):
+    c = a
+    d = b
+    a = d
+    b = c
+    return f'Os valores trocados são {a} e {b}'
+    
+    
+def pega_numero():
+    a = int(input('Enter 1st number: '))
+    return a
+
+# a = pega_numero()
+print(funcao(5, 90))
+
 """
