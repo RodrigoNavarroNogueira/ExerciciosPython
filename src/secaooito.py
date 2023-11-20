@@ -436,4 +436,15 @@ numeros = []
 numeros = pega_numero()
 print(funcao(numeros))
 
+43)
+
+from random import sample
+
+def funcao():
+    lista = sample(range(1, 101), 10)
+    return lista
+
+
+print(funcao())
+
 """
