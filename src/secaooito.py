@@ -447,4 +447,22 @@ def funcao():
 
 print(funcao())
 
+44)
+
+from random import sample
+
+def funcao():
+    a = []
+    b = []
+    x = sample(range(1, 101), 30)
+    for n in x:
+        if n % 2 == 0:
+            a.append(n)
+        else:
+            b.append(n)
+    return f'Lista A: {a} / Lista B: {b}'
+
+
+print(funcao())
+
 """
