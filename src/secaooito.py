@@ -489,6 +489,34 @@ def pega_numero():
 numeros = pega_numero()    
 print(funcao(numeros))
 
+46)
+
+import statistics
+
+
+def funcao(numeros):
+    print(numeros)
+    print(numeros[::-1])
+    print(statistics.mean(numeros))
+    
+    
+def pega_numero():
+    numeros = []
+    while True:
+        n = input('Digite um numero: ')
+        if n == 'x':
+            break
+        else:
+            n = int(n)
+            numeros.append(n)
+    return numeros
+    
+    
+numeros = pega_numero()    
+print(funcao(numeros))
+
+
+
 """
 
 
