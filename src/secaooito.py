@@ -515,7 +515,20 @@ def pega_numero():
 numeros = pega_numero()    
 print(funcao(numeros))
 
+47)
 
+def funcao(matriz):
+    soma = 0
+    for elemento in matriz:
+        for numero in elemento:
+            if numero > 10:
+                soma += 1
+
+    return soma
+
+
+matriz = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+print(funcao(matriz))
 
 """
 
