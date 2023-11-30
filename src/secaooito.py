@@ -465,4 +465,30 @@ def funcao():
 
 print(funcao())
 
+45)
+
+import numpy as np
+
+
+def funcao(numeros):
+    desvio_padrao = np.std(numeros)
+    return f'O desvio padrão do vetor é {desvio_padrao}'
+    
+    
+def pega_numero():
+    numeros = []
+    while True:
+        n = input('Digite um numero: ')
+        if n == 'x':
+            break
+        else:
+            n = int(n)
+            numeros.append(n)
+    return numeros
+    
+numeros = pega_numero()    
+print(funcao(numeros))
+
 """
+
+
