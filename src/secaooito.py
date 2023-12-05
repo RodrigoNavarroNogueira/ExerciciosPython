@@ -530,6 +530,17 @@ def funcao(matriz):
 matriz = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 print(funcao(matriz))
 
+48)
+
+def funcao(matriz):
+    um = matriz[0][1]
+    dois = matriz[0][2]
+    tres = matriz[1][2]
+    return um + dois + tres
+
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(funcao(matriz))
+
 """
 
 
