@@ -563,6 +563,26 @@ def funcao(matriz):
 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(funcao(matriz))
 
+59)
+
+um = []
+dois = []
+
+
+def funcao(um, dois):
+    return um + dois
+
+
+def pega_numero():
+    for n in range(10):
+        num = int(input(f'Digite o {n + 1} numero: \n'))
+        um.append(num)
+    for n in range(10):
+        num = int(input(f'Digite o {n + 1} numero: \n'))
+        dois.append(num)        
+
+
+pega_numero()
+print(funcao(um, dois))
+
 """
-
-
