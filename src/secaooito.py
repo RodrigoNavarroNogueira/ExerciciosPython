@@ -585,4 +585,37 @@ def pega_numero():
 pega_numero()
 print(funcao(um, dois))
 
+60)
+
+def funcao(string):
+    return string.find("mundo")
+
+
+def pega_numero():
+    string = input('Digite uma string: ')
+    return string
+
+
+string = pega_numero()
+print(funcao(string))
+
+61)
+
+p1 = 'pedra'
+p2 = 'pedro'
+letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'y', 'x', 'z']
+
+
+def funcao(p1, p2):
+    for letra in p2:
+        for let in letras:
+            res = p2.replace(letra, let)
+            if res == p1:
+                return True
+    else:
+        return False
+            
+
+print(funcao(p1, p2))
+
 """
