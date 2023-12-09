@@ -652,6 +652,13 @@ print(funcao(str1, str2))
 
 65)
 
+def funcao(str1, str2, n):
+    return str1 + str2[:n]
+    
 
+str1 = 'Aqui estou'
+str2 = ' mais um dia'
+n = int(input('Digite um numero: '))
+print(funcao(str1, str2, n))
 
 """
