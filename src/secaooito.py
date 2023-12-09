@@ -642,6 +642,16 @@ print(funcao(str1, str2))
 
 64)
 
+def funcao(str1, str2):
+    return str1 + str2
+    
+
+str1 = 'Aqui estou'
+str2 = ' mais um dia'
+print(funcao(str1, str2))
+
+65)
+
 
 
 """
