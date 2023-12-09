@@ -618,4 +618,17 @@ def funcao(p1, p2):
 
 print(funcao(p1, p2))
 
+62)
+
+def funcao(string):
+    return len(string)
+
+
+string = 'Digite a sua string'
+print(funcao(string))
+
+63)
+
+
+
 """
