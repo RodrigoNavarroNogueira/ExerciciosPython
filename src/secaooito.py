@@ -629,6 +629,19 @@ print(funcao(string))
 
 63)
 
+def funcao(str1, str2):
+    if str1 == str2:
+        return 'As strings são iguais'
+    else:
+        return 'Não, as strings são diferentes'
+    
+
+str1 = 'Rodrigo'
+str2 = 'Ronaldo'
+print(funcao(str1, str2))
+
+64)
+
 
 
 """
