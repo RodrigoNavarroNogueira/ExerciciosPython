@@ -661,4 +661,18 @@ str2 = ' mais um dia'
 n = int(input('Digite um numero: '))
 print(funcao(str1, str2, n))
 
+66)
+
+def funcao(string):
+    return string.upper()
+
+
+string = input('Digite sua string: ')
+print(funcao(string))
+
+67)
+
+
+
 """
+
