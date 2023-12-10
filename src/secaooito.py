@@ -672,7 +672,30 @@ print(funcao(string))
 
 67)
 
+def funcao(str1, str2):
+    posicao = 0
+    while True:   
+        try:     
+            str3.append(str1[posicao])
+        except IndexError:
+            pass
+        try:
+            str3.append(str2[posicao])
+        except IndexError:
+            pass
+        posicao += 1
+        if posicao > len(str1) and posicao > len(str2):
+            break
+    a = ''.join(str3)
+    return a
 
+
+str1 = '1111111zz'
+str2 = 'Rodrigo'
+str3 = []
+print(funcao(str1, str2))
 
 """
+
+
 
