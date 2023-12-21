@@ -670,7 +670,7 @@ def funcao(string):
 string = input('Digite sua string: ')
 print(funcao(string))
 
-67)
+68)
 
 def funcao(str1, str2):
     posicao = 0
@@ -696,6 +696,5 @@ str3 = []
 print(funcao(str1, str2))
 
 """
-
 
 
